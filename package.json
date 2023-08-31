@@ -9,7 +9,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "deploy": "ionic build --prod -- --base-href https://nieltorres.com/proyectos/gracedu/ && npx angular-cli-ghpages --branch=master --dir=www",
+    "deploy2": "ionic build --prod -- --base-href https://niel-torres.github.io/invitacionBoda/ && npx angular-cli-ghpages --branch=master --dir=www"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +23,7 @@
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
+    "@capacitor/android": "5.2.3",
     "@capacitor/app": "5.0.6",
     "@capacitor/browser": "^5.0.6",
     "@capacitor/core": "5.2.3",
@@ -28,6 +31,7 @@
     "@capacitor/keyboard": "5.0.6",
     "@capacitor/status-bar": "5.0.6",
     "@ionic/angular": "^7.0.0",
+    "angular-cli-ghpages": "^1.0.7",
     "ionicons": "^7.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",

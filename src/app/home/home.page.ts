@@ -18,7 +18,7 @@ export class HomePage {
   }
 
   reproducir() {
-    const audio = new Audio('./../../assets/music/a-thousand-years.mp3');
+    const audio = new Audio('assets/music/a-thousand-years.mp3');
     audio.play();
   }
 
