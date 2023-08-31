@@ -1,7 +1,0 @@
-{
-  "name": "invitacionBoda",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
