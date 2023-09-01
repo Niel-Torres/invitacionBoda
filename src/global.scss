@@ -26,5 +26,31 @@
 @import "@ionic/angular/css/flex-utils.css";
 
 /* External */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Permanent+Marker&display=swap');
+
+.fondo-1{
+    background-image: url('assets/images/wallpaper-flowers.jpeg');
+}
+
+.fondo-2{
+    background-image: url('assets/images/wallpaper-papel.jpeg');
+}
+
+.wallpaper-portada1{
+    background-image: url('assets/images/wallpaper-portada1.png');
+}
+
+.wallpaper-portada2{
+    background-image: url('assets/images/wallpaper-portada2.png');
+}
+
+
+@media only screen and (max-device-width: 281px) {
+
+    .wallpaper-portada1{
+        background-image: url('assets/images/wallpaper-portada1-small.png');
+    }
+  
+}
+
 

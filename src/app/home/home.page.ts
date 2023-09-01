@@ -8,12 +8,14 @@ import { App } from '@capacitor/app';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
- 
+
   isModalOpen = false;
 
-  constructor() {}
 
-  loadData(evento: any){
+
+  constructor() { }
+
+  loadData(evento: any) {
     console.log("Cargando");
   }
 
@@ -22,24 +24,29 @@ export class HomePage {
     audio.play();
   }
 
-  async gotoHashtag(){
+  gotoHashtag() {
     let urlHashTag = "https://www.instagram.com/explore/tags/bodadegracedu";
-    await Browser.open({ url: urlHashTag });
+    //await Browser.open({ url: urlHashTag });
+
+    window.open(urlHashTag, "_blank");
   }
 
-  async gotoWhatsapp(novia?: string){
+  gotoWhatsapp(novia?: string) {
 
     let urlApiWhatsapp = "https://api.whatsapp.com/send?phone=";
     let message = "&text=%C2%A1Hola%21+%F0%9F%8C%9F+Quiero+confirmar+mi+asistencia+a+la+boda+de+Edu+%26+Grace+%E2%99%A5%EF%B8%8F%F0%9F%92%8D%F0%9F%92%92";
     let tfno_novio = "34649101596";
     let tfno_novia = "34675575069";
 
-    let urlChatWhatsapp = urlApiWhatsapp+tfno_novio+message;
-    if(novia){
-      urlChatWhatsapp = urlApiWhatsapp+tfno_novia+message;
+    let urlChatWhatsapp = urlApiWhatsapp + tfno_novio + message;
+    if (novia) {
+      urlChatWhatsapp = urlApiWhatsapp + tfno_novia + message;
     }
-    
-    await Browser.open({ url: urlChatWhatsapp });
+
+    //Browser.open({ url: urlChatWhatsapp });
+
+    window.open(urlChatWhatsapp, "_blank");
+
   }
 
 
