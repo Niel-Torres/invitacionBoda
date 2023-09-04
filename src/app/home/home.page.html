@@ -1,7 +1,6 @@
 
 
 <ion-content [fullscreen]="true">
-  <span class="twin1"></span>
   <div class="body">  
     <div class="contenedor_bloque wallpaper-portada1">
       <div>
@@ -12,9 +11,14 @@
           <h3 class="seccionPortada_subtitulo2 gris">Te invitamos a que nos acompañes a celebrar nuestro día</h3>
         </div>
         <div class="center audio">
-          <audio controls src='assets/music/a-thousand-years.mp3' type="audio/mp3" preload="none">
+          <audio controls src='assets/music/a-thousand-years.mp3' type="audio/mp3" controls autoplay>
             Your browser does not support the <code>audio</code> element.
         </audio>
+
+        <!-- <iframe type="audio/mp3" allow="autoplay" style="display: block"
+        src="assets/music/a-thousand-years.mp3">
+      </iframe> -->
+
         
         </div>
       </div>
@@ -57,11 +61,9 @@
           <!-- <img src="assets/images/iglesia/ceremonia/convento-de-los-Padres-Recoletos2.png" width="600px" height="600px"> -->
           <h2>Convento De Los <br>Padres Agustinos Recoletos</h2>
         </div>
-        <div class="bloque2_ubicacionIglesia center">
-          <h2>Frente a la plaza <br>de armas</h2>
-        </div>
+       
         <div class="bloque2_horaIglesia center">
-          <h2>a las 19:30 h</h2>
+          <h2>a las 12:00 h</h2>
         </div>
         <div class="bloque2_boton center">
           <a href="https://goo.gl/maps/EbtpwCFtYvd2nXi18" class="btn" target="_blank">
@@ -84,13 +86,16 @@
           <p>Recepción</p>
         </div>
         <div class="bloque2_nombreIglesia center">
-          <h2>Iglesia Virgen de la <br>puerta</h2>
+          <h2>Lugar por confirmar entre</h2>
         </div>
-        <div class="bloque2_ubicacionIglesia center">
-          <h2>Frente a la plaza <br>de armas</h2>
-        </div>
+     
         <div class="bloque2_horaIglesia center">
-          <h2>a las 19:30 h</h2>
+          <h2>
+            Huetor Vega
+            <br>Cajar
+            <br>La zubia
+            <br>Monachil
+            <br><br>a las 14:00 h</h2>
         </div>
         <div class="bloque2_boton center">
           <a href="https://goo.gl/maps/EbtpwCFtYvd2nXi18" class="btn" target="_blank">
@@ -114,7 +119,7 @@
       </div>
 
       <div class="bloque4_texto">
-        <p style="text-align: center;">Ceremonia<br><strong>19:15</strong></p>
+        <p style="text-align: center;">Ceremonia religiosa<br><strong>12:00</strong></p>
       </div>
 
       <div class="linea_vertical">
@@ -128,7 +133,7 @@
       </div>
 
       <div class="bloque4_texto">
-        <p style="text-align: center;">Copa de bienvenida<br><strong>20:00</strong></p>
+        <p style="text-align: center;">Cóctel<br><strong>14:00</strong></p>
       </div>
 
       <div class="linea_vertical">
@@ -142,7 +147,7 @@
       </div>
 
       <div class="bloque4_texto">
-        <p style="text-align: center;">Cena nupcial<br><strong>20:15</strong></p>
+        <p style="text-align: center;">Celebración<br><strong>15:00</strong></p>
       </div>
 
       <div class="linea_vertical">
@@ -150,7 +155,7 @@
       </div>
     </div>
 
-    <div>
+    <!-- <div>
       <div class="icono bloque4_image bot20">
         <img src="assets/images/anillos/icono-anillos-300x300.png" width="400px" height="400px">
       </div>
@@ -162,7 +167,7 @@
       <div class="linea_vertical">
         <hr>
       </div>
-    </div>
+    </div> -->
 
     <div>
       <div class="icono bloque4_image bot20">
@@ -170,7 +175,7 @@
       </div>
 
       <div class="bloque4_texto">
-        <p style="text-align: center;">Gran fiesta<br><strong>22:15</strong></p>
+        <p style="text-align: center;">A bailar<br><strong>17:45</strong></p>
       </div>
 
     </div>
@@ -237,7 +242,7 @@
 
   <!--NUEVO BLOQUE DE CONFIRMAR ASISTENCIA -->
   <div class="fondo-small">
-    <h2 class="rosa fondo-small-text2">¡Ojalá contemos contigo!. <br>Por favor, confirma tu asitencia.</h2>
+    <h2 class="rosa fondo-small-text2">¡Nos encantaría contar contigo!. <br>Por favor, confirma tu asitencia.</h2>
     
     <div class="bloque-boton">
       <div class="rosa">
@@ -296,7 +301,7 @@
         <h2 class="text-style size-high negro">¿Os quedaís a dormir?</h2>
       </div>
       <div class="text-body-rosa">
-        ¡Genial!. <br>Porque también tenemos un plan para los que queréis quedaros, te recomendamos los siguientes hoteles.
+        ¡Genial!. <br>Os ofrecemos algunas opciones.
       </div>
       <div class="bloque-boton top35">
         <div class="rosa">
@@ -319,18 +324,31 @@
     <ion-item class="bloqueHashtag" (click)="gotoHashtag()">
       <ion-icon name="logo-instagram" class="instragram"></ion-icon>
       <ion-label class="hashtag">
-        <span>#bodadegracedu</span></ion-label>
+        <span>#bodagracedu</span>
+      </ion-label>
     </ion-item>
+    <ion-item class="bloqueEtiquetanos">
+      <ion-label>
+        <span>Etiquétanos @gracebtm</span>
+      </ion-label>
+    </ion-item>
+
+
   
   </div>
 
-  <div class="separador fondo-small">
+  <!-- <div class="separador fondo-small">
     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="542px" height="71px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 542 71.35" xmlns:xlink="http://www.w3.org/1999/xlink">
       <g id="Capa_x0020_1">
        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
        <path class="fil0" d="M273.31 71.35c-27.06,-10.04 -50.23,-53.85 -36.83,-65.02 13.39,-11.16 31.73,5.92 34.52,15.12 0,0 6.78,-25.16 27.15,-20.98 20.37,4.19 2.23,60.28 -24.84,70.88zm73.86 -32.33c3.07,1.79 6.61,2.89 10.37,3.6 3.74,0.73 7.67,1.07 11.65,1.26 7.96,0.36 16.15,0.06 24.33,-0.69 16.37,-1.49 32.84,-3.92 49.31,-6.53l24.75 -4c8.27,-1.33 16.58,-2.43 24.92,-3.66 8.36,-1.21 16.78,-2.42 25.61,-2.23 4.4,0.19 8.94,0.62 13.55,2.37 2.28,0.89 4.59,2.19 6.55,4.12 1.95,1.91 3.42,4.57 3.76,7.24 0.23,1.74 -1,3.33 -2.74,3.55 -1.2,0.16 -2.33,-0.38 -2.99,-1.3l-0.22 -0.31c-1.81,-2.54 -4.14,-3.81 -7.45,-4.98 -3.24,-1.15 -7.09,-1.73 -10.98,-2.11 -7.86,-0.75 -16.14,-0.55 -24.36,0.06 -8.23,0.68 -16.42,2.1 -24.61,3.51 -8.2,1.41 -16.4,2.93 -24.58,4.57 -16.41,3.14 -32.84,6.51 -49.7,8.28 -8.42,0.84 -16.95,1.51 -25.66,0.97 -4.34,-0.28 -8.75,-0.92 -13.1,-2.2 -4.34,-1.26 -8.72,-3.29 -12.29,-6.61 -1.26,-1.18 -1.34,-3.17 -0.15,-4.44 1.02,-1.09 2.63,-1.29 3.87,-0.57l0.16 0.1zm-148.46 4.91c-3.57,3.32 -7.96,5.35 -12.28,6.61 -4.36,1.28 -8.77,1.92 -13.11,2.2 -8.71,0.54 -17.24,-0.13 -25.66,-0.97 -16.86,-1.77 -33.29,-5.14 -49.7,-8.28 -8.18,-1.64 -16.38,-3.16 -24.58,-4.57 -8.19,-1.41 -16.38,-2.83 -24.61,-3.51 -8.22,-0.61 -16.5,-0.81 -24.36,-0.06 -3.89,0.38 -7.74,0.96 -10.98,2.11 -3.31,1.17 -5.64,2.44 -7.45,4.98l-0.22 0.31c-1.02,1.42 -3,1.76 -4.43,0.74 -0.98,-0.7 -1.45,-1.87 -1.3,-2.99 0.34,-2.67 1.81,-5.33 3.76,-7.24 1.96,-1.93 4.27,-3.23 6.55,-4.12 4.61,-1.75 9.15,-2.18 13.56,-2.37 8.82,-0.19 17.24,1.02 25.59,2.23 8.35,1.23 16.66,2.33 24.93,3.66l24.75 4c16.46,2.61 32.94,5.04 49.31,6.53 8.18,0.75 16.36,1.05 24.33,0.69 3.98,-0.19 7.91,-0.53 11.65,-1.26 3.76,-0.71 7.29,-1.81 10.37,-3.6l0.16 -0.1c1.49,-0.87 3.41,-0.37 4.29,1.13 0.75,1.29 0.48,2.9 -0.57,3.88z"></path>
       </g>
      </svg>
+  </div> -->
+    
+
+  <div class="separador fondo-1 last-part">
+    <h2 class="text-body-rosa">Gracias por acompañarnos en este día tan especial para nosotros</h2>
   </div>
 
   <!-- <div class="bloque7">
@@ -347,5 +365,10 @@
       </div>
     </div>
   </div> -->
+  </div>
+  <div class="hidden">
+    <span>
+      Para una mejor experiencia, abre la invitación desde tu móvil o gira la pantalla
+    </span>
   </div>
 </ion-content>

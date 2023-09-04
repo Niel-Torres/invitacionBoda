@@ -1,4 +1,4 @@
-import { Component, ViewChild, NgZone } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Browser } from '@capacitor/browser';
 import { App } from '@capacitor/app';
 
@@ -7,13 +7,19 @@ import { App } from '@capacitor/app';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit{
 
+  
   isModalOpen = false;
 
+  
 
+  constructor() {
+   }
 
-  constructor() { }
+   ngOnInit(): void {
+     //this.reproducir();
+   }
 
   loadData(evento: any) {
     console.log("Cargando");

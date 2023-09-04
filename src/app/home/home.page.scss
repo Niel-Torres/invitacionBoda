@@ -165,6 +165,7 @@ audio::-webkit-media-controls-play-button {}
 
 .fondo-small {
   background-color: #EDDBC7;
+  text-align: center;
 
   .fondo-small-text1 {
     margin: 0px 35px 0px 35px;
@@ -179,7 +180,7 @@ audio::-webkit-media-controls-play-button {}
   }
 
   .svg-heart1 {
-    margin-left: 50%;
+    //margin-left: 50%;
     margin-bottom: 40px;
     margin-top: 15px;
     fill: brown;
@@ -189,34 +190,73 @@ audio::-webkit-media-controls-play-button {}
 
   .bloqueHashtag {
     padding: 0px;
-    margin-left: 20%;
-    margin-right: 20%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
     padding-top: 10px;
     --ion-item-background: #EDDBC7;
   }
 
+  .bloqueEtiquetanos {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    --ion-item-background: #EDDBC7;
+
+    ion-label{
+      color: #000000;
+      //text-shadow: 4px 4px 4px #aaa;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+   
+    span {
+      fill: #A7727D;
+      color: #A7727D;
+      font-family: 'Kalam', cursive;
+    }
+  }
+
+
+
+}
+
+
+.last-part{
+  height: 500px;
+  padding-top: 52%;
+  width: 100%;
+  background-color: white;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2{
+    font-size: 50px;
+    line-height: 0.8em;
+    color: black;
+    font-family: "Tangerine", serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: 400;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 
 .contactos {
   display: flex;
-  //margin-left: 10%;
-  //margin-right: 10%;
   justify-content: center;
   align-items: center;
 }
 
 .contactos_contacto {
-  //--ion-item-background: #A7727D;
   --background: #A7727D;
+  --box-shadow: 4px 4px 4px gray;
   border-radius: 10px;
-  /* width: 70%; */
-  /* margin-left: 15%; */
-  /* font-size: 20px; */
-  //margin-left: 15%;
-  //margin-right: 15%;
   margin: 5px;
   margin-bottom: 30px;
-
 }
 
 .whatsapp {
@@ -242,9 +282,9 @@ audio::-webkit-media-controls-play-button {}
 
 .hashtag2 {
   color: #000000;
-  margin-left: 15px;
+  margin-left: 5px;
   text-shadow: 4px 4px 4px #aaa;
-  font-size: 12px;
+  font-size: 14px;
   display: grid;
 
   span {
@@ -276,7 +316,6 @@ audio::-webkit-media-controls-play-button {}
 }
 
 .icono {
-  //margin: -30px 0px 0px 0px;
   text-align: center;
 }
 
@@ -309,15 +348,15 @@ audio::-webkit-media-controls-play-button {}
   font-weight: 400;
 }
 
-.bloque2_ubicacionIglesia {}
+// .bloque2_ubicacionIglesia {}
 
-.bloque2_ubicacionIglesia h2 {
-  font-size: 19px;
-  line-height: 1.3em;
-  color: #A7727D;
-  font-family: 'Kalam', cursive;
-  font-weight: 400;
-}
+// .bloque2_ubicacionIglesia h2 {
+//   font-size: 19px;
+//   line-height: 1.3em;
+//   color: #A7727D;
+//   font-family: 'Kalam', cursive;
+//   font-weight: 400;
+// }
 
 .bloque2_horaIglesia h2 {
   font-size: 24px;
@@ -372,7 +411,7 @@ audio::-webkit-media-controls-play-button {}
 }
 
 .bloque4 {
-  height: 1555px;
+  height: 1255px;
 }
 
 .bot20 {
@@ -570,6 +609,10 @@ audio::-webkit-media-controls-play-button {}
   /* Lowering the shadow */
 }
 
+.hidden {
+  display: none;
+}
+
 /****
 MEDIAS QUERYS
 */
@@ -581,7 +624,7 @@ MEDIAS QUERYS
   }
 
   .bloque4 {
-    height: 1300px;
+    height: 1100px;
   }
 
   .hashtag2 {
@@ -601,14 +644,13 @@ MEDIAS QUERYS
 
 }
 
-@media screen and (min-width: 520px) {
-
+@media screen and (min-width: 520px) and (orientation: landscape) {
 
   .body {
     display: none;
   }
 
-  .twin1::after {
+  .hidden {
     position: relative;
     display: block;
     justify-content: center;
@@ -620,11 +662,10 @@ MEDIAS QUERYS
     width: 100%;
     height: 100%;
     font-size: 25px;
-    font-family: 'Kalam';
+    font-family: 'Kalam', cursive;
     padding-left: 20%;
     padding-right: 20%;
     background-color: floralwhite;
-    Content: "Para una mejor experiencia, abre la invitación desde tu móvil o gira la pantalla";
   }
 
 }
