@@ -449,7 +449,8 @@ audio::-webkit-media-controls-play-button {}
 
 .bloque4_texto {
   color: #54595F;
-  font-family: "Montserrat", Sans-serif;
+  //font-family: "Montserrat", Sans-serif;
+  font-family: "Kalam", cursive;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.7em;
@@ -515,6 +516,10 @@ audio::-webkit-media-controls-play-button {}
   font-size: 19px;
   margin: 0px 25px 0px 25px;
   padding: 0px 0px 0px 0px;
+}
+
+.h-310{
+  height: 310px !important;
 }
 
 .top35 {
