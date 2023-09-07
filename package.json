@@ -9,9 +9,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
+    "prepare:nieltorres": "ionic build --prod -- --base-href https://nieltorres.com/invitaciones/boda/gracedu/",
     "deploy:ghpages": "ionic build --prod -- --base-href https://niel-torres.github.io/invitacionBoda/ && npx angular-cli-ghpages --branch=gh-pages --dir=www",
     "deploy:master": "ionic build --prod -- --base-href https://niel-torres.github.io/invitacionBoda/ && npx angular-cli-ghpages --branch=master --dir=www",
-    "prepare:deploy": "npx angular-cli-ghpages --dir=www"
+    "deploy:local": "npx angular-cli-ghpages --dir=www"
   },
   "private": true,
   "dependencies": {
