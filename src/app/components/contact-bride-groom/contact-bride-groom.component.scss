@@ -1,0 +1,31 @@
+.container_contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_contacts_button {
+    --background: #A7727D;
+    --box-shadow: 4px 4px 4px gray;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+.container_contacts_button_whatsapp {
+    color: #25d366;
+}
+
+.container_contacts_button_data {
+    color: #000000;
+    margin-left: 5px;
+    text-shadow: 4px 4px 4px #aaa;
+    font-size: 14px;
+    display: grid;
+  
+    span {
+      //fill: #A7727D;
+      color: #FFFFFF;
+      font-family: 'Kalam', cursive;
+    }
+}

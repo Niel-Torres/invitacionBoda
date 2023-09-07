@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  hashtag: "#bodagracedu",
+  urlApiWhatsapp: "https://api.whatsapp.com/send?phone="
 };

@@ -1,0 +1,182 @@
+.bloque7 {
+    height: 150px;
+    //background-color: #A7727D;
+    background-image: url(/assets/images/fondo-blanco-papel.jpeg);
+  }
+  
+  .bloque-final {
+    height: 50px;
+    width: 100%;
+    //background-color: #A7727D;
+  
+    .content {
+      width: 250px;
+      font-size: 25px;
+      line-height: 40px;
+      font-family: 'Muli';
+      color: #E1B698;
+      height: 40px;
+      position: relative;
+      top: 55px;
+      left: 50%;
+      //margin-top:-15px;
+      margin-left: -118px;
+  
+      &:before {
+        content: '[';
+        position: absolute;
+        left: -30px;
+        line-height: 40px;
+      }
+  
+      &:after {
+        content: ']';
+        position: absolute;
+        right: -30px;
+        line-height: 40px;
+      }
+  
+      &:after,
+      &:before {
+        color: #A7727D;
+        font-size: 42px;
+        animation: 2s linear 0s normal none infinite opacity;
+        -webkit-animation: 2s ease-out 0s normal none infinite opacity;
+        -moz-animation: 2s ease-out 0s normal none infinite opacity;
+        -o-animation: 2s ease-out 0s normal none infinite opacity;
+      }
+    }
+  
+    .visible {
+      float: left;
+      font-weight: 600;
+      overflow: hidden;
+      height: 40px;
+    }
+  
+    p {
+      display: inline;
+      float: left;
+      margin: 0;
+    }
+  
+    ul {
+      margin-top: 0;
+      padding-left: 110px;
+      text-align: left;
+      list-style: none;
+      animation: 6s linear 0s normal none infinite change;
+      -webkit-animation: 6s linear 0s normal none infinite change;
+      -moz-animation: 6s linear 0s normal none infinite change;
+      -o-animation: 6s linear 0s normal none infinite change;
+    }
+  
+    ul li {
+      line-height: 40px;
+      margin: 0;
+    }
+  
+    @-webkit-keyframes opacity {
+      0% {
+        opacity: 0;
+      }
+  
+      50% {
+        opacity: 1;
+      }
+  
+      100% {
+        opacity: 0;
+      }
+    }
+  
+    @keyframes opacity {
+      0% {
+        opacity: 0;
+      }
+  
+      50% {
+        opacity: 1;
+      }
+  
+      100% {
+        opacity: 0;
+      }
+    }
+  
+    @-webkit-keyframes change {
+      0% {
+        margin-top: 0;
+      }
+  
+      15% {
+        margin-top: 0;
+      }
+  
+      25% {
+        margin-top: -40px;
+      }
+  
+      40% {
+        margin-top: -40px;
+      }
+  
+      50% {
+        margin-top: -80px;
+      }
+  
+      65% {
+        margin-top: -80px;
+      }
+  
+      75% {
+        margin-top: -40px;
+      }
+  
+      85% {
+        margin-top: -40px;
+      }
+  
+      100% {
+        margin-top: 0;
+      }
+    }
+  
+    @keyframes change {
+      0% {
+        margin-top: 0;
+      }
+  
+      15% {
+        margin-top: 0;
+      }
+  
+      25% {
+        margin-top: -40px;
+      }
+  
+      40% {
+        margin-top: -40px;
+      }
+  
+      50% {
+        margin-top: -80px;
+      }
+  
+      65% {
+        margin-top: -80px;
+      }
+  
+      75% {
+        margin-top: -40px;
+      }
+  
+      85% {
+        margin-top: -40px;
+      }
+  
+      100% {
+        margin-top: 0;
+      }
+    }
+  }

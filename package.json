@@ -4,17 +4,14 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ionic serve",
+    "build:prod": "ionic build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lint": "ng lint",
-    "deploy:web": "ionic build --prod -- --base-href https://nieltorres.com/proyectos/gracedu/ && npx angular-cli-ghpages --branch=master --dir=www",
     "deploy:ghpages": "ionic build --prod -- --base-href https://niel-torres.github.io/invitacionBoda/ && npx angular-cli-ghpages --branch=gh-pages --dir=www",
     "deploy:master": "ionic build --prod -- --base-href https://niel-torres.github.io/invitacionBoda/ && npx angular-cli-ghpages --branch=master --dir=www",
-    "prepare:deploy": "ionic build --prod -- --base-href=https://niel-torres.github.io/invitacionBoda/",
-    "deploy:only": "npx angular-cli-ghpages --dir=www"
+    "prepare:deploy": "npx angular-cli-ghpages --dir=www"
   },
   "private": true,
   "dependencies": {

@@ -1,0 +1,16 @@
+<div class="container_contacts">
+  <ion-button class="container_contacts_button" (click)="gotoWhatsapp('bride')">
+    <ion-icon class="container_contacts_button_whatsapp" name="logo-whatsapp"></ion-icon>
+    <ion-label class="container_contacts_button_data">
+      <span>{{brideName.name}}</span>
+      <span>{{brideName.movil}}</span>
+    </ion-label>
+  </ion-button>
+  <ion-button class="container_contacts_button" (click)="gotoWhatsapp()">
+    <ion-icon class="container_contacts_button_whatsapp" name="logo-whatsapp"></ion-icon>
+    <ion-label class="container_contacts_button_data">
+      <span>{{groomName.name}}</span>
+      <span>{{groomName.movil}}</span>
+    </ion-label>
+  </ion-button>
+</div>
