@@ -606,10 +606,10 @@ audio::-webkit-media-controls-play-button {}
 
 /* Adding transformation when the button is active */
 .btn:active {
-  transform: scale(0.98);
-  color: rgba(255, 255, 255, 1) !important;
-  box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-  transition: all 0.2s ease;
+   transform: scale(0.98);
+  // color: rgba(255, 255, 255, 1) !important;
+  // box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+   transition: all 0.2s ease;
   /* Scaling button to 0.98 to its original size */
   /* Lowering the shadow */
 }
@@ -702,7 +702,6 @@ MEDIAS QUERYS
   height: 150px;
   //background-color: #A7727D;
   background-image: url(/assets/images/fondo-blanco-papel.jpeg);
-
 }
 
 .bloque-final {
