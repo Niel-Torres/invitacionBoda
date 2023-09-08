@@ -6,8 +6,6 @@ import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
 import { ModalComponent } from '../components/modal/modal.component';
-import { CarruselComponent } from '../components/carrusel/carrusel.component';
-import { ContactBrideGroomComponent } from '../components/contact-bride-groom/contact-bride-groom.component';
 
 @NgModule({
   imports: [
@@ -17,10 +15,8 @@ import { ContactBrideGroomComponent } from '../components/contact-bride-groom/co
     HomePageRoutingModule
   ],
   declarations: [
-    HomePage, 
-    ModalComponent, 
-    CarruselComponent,
-    ContactBrideGroomComponent
+    
+    ModalComponent 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   
