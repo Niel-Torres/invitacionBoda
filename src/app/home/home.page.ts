@@ -29,10 +29,10 @@ export class HomePage {
   }
 
   gotoHashtag() {
-    let urlHashTag = "https://www.instagram.com/explore/tags/bodadegracedu";
+    let urlHashTag = "https://www.instagram.com/explore/tags/bodagracedu";
     //await Browser.open({ url: urlHashTag });
 
-    window.open(urlHashTag, "_blank");
+    window.open(urlHashTag, "_system");
   }
 
 
