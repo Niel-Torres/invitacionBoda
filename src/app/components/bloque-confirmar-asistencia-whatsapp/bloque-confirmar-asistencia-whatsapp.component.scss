@@ -1,0 +1,64 @@
+// SEPARADOR BLOQUE 1 - INI
+.fondo-small {
+    background-color: #EDDBC7;
+    text-align: center;
+  
+    .fondo-small-text1 {
+      margin: 0px 35px 0px 35px;
+      font-family: 'Kalam', cursive;
+      padding-top: 40px;
+    }
+  
+    .fondo-small-text2 {
+      margin: 0px 40px 0px 40px;
+      font-family: 'Kalam', cursive;
+      padding: 30px 0px 30px 0px;
+    }
+  
+    .svg-heart1 {
+      //margin-left: 50%;
+      margin-bottom: 40px;
+      margin-top: 15px;
+      fill: brown;
+    }
+  
+    .svg-heart2 {}
+  
+    .bloqueHashtag {
+      padding: 0px;
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      padding-top: 10px;
+      --ion-item-background: #EDDBC7;
+    }
+  
+    .bloqueEtiquetanos {
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      --ion-item-background: #EDDBC7;
+  
+      ion-label{
+        color: #000000;
+        //text-shadow: 4px 4px 4px #aaa;
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+      }
+  
+     
+      span {
+        fill: #A7727D;
+        color: #A7727D;
+        font-family: 'Kalam', cursive;
+      }
+    }
+  
+  
+  
+  }
+
+  .rosa {
+    color: #A7727D;
+  }

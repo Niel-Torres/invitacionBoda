@@ -1,0 +1,117 @@
+.bloque_section {
+
+    .icono-img {
+      width: 35%;
+      vertical-align: middle;
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      margin-top: 40px;
+    }
+  
+    svg {
+      margin: 80px 0px 40px 0px;
+      height: 45px;
+      width: auto;
+    }
+  }
+
+  .contenedor_bloque {
+    height: 670px;
+    width: 100%;
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .icono {
+    text-align: center;
+  }
+
+  .bloque_body {
+    margin-top: -20px;
+  }
+
+  .bloque_titulo {
+    font-size: 30px;
+    color: #A7727D;
+    font-family: "Bodoni Moda", San-serif;
+    margin-bottom: 35px;
+  }
+
+  .fantasy {
+    font-family: 'Permanent Marker', cursive;
+  }
+
+  .center {
+    text-align: center;
+    //width: 100%;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bloque_subtitulo {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+  }
+  
+  .bloque_subtitulo h2 {
+    font-size: 50px;
+    line-height: 0.8em;
+    color: black;
+    //font-family: 'Manuscrita', Sans-serif;
+    //font-size: 79px;
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    font-weight: 400;
+  }
+
+  .bloque_hora h2 {
+    font-size: 24px;
+    color: black;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+  }
+
+  .bloque_boton {
+    margin-top: 30px;
+  
+    span {
+      font-family: 'Kalam', cursive;
+    }
+  
+    a {
+      font-size: 19px;
+      border-width: 2px 2px 2px 2px;
+      padding: 10px 15px 10px 15px;
+      font-family: 'Bodoni Moda', Sans-serif;
+      fill: #FFFFFF;
+      color: #FFFFFF;
+      background-color: #A7727D;
+      border-style: solid;
+      box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .7), inset -2px -2px 3px rgba(0, 0, 0, .1), 2px 2px 10px rgba(0, 0, 0, .1);
+      border-color: #EDDBC7;
+      text-decoration: none;
+      border-radius: 20px;
+  
+      .navigate {
+        font-size: 12px;
+      }
+    }
+  }
+
+  /* Adding transformation when the button is active */
+.btn:active {
+    transform: scale(0.98);
+   // color: rgba(255, 255, 255, 1) !important;
+   // box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+   /* Scaling button to 0.98 to its original size */
+   /* Lowering the shadow */
+ }

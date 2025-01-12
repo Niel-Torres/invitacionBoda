@@ -1,0 +1,61 @@
+.bloque_detalle_celebracion {
+    height: 1255px;
+}
+
+.contenedor_bloque {
+    height: auto;
+    width: 100%;
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10%;
+}
+
+.icono {
+    text-align: center;
+}
+
+.bloque_image {
+
+    img {
+        width: 35%;
+        height: auto;
+        max-width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+.bot20 {
+    margin-bottom: 20px;
+}
+
+.first-icono {
+    img {
+        margin-top: 55px;
+    }
+}
+
+.bloque_texto {
+    color: #54595F;
+    //font-family: "Montserrat", Sans-serif;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7em;
+    margin: -20px 0px 15px 0px;
+}
+
+.linea_vertical {
+    hr {
+        height: 60px;
+        width: .5vw;
+        border-width: 0;
+        color: #000;
+        background-color: #000;
+        margin-left: 50%;
+    }
+}
+

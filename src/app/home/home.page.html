@@ -1,294 +1,50 @@
 <ion-content [fullscreen]="true">
   <div class="body">
-    <!-- Bloque 1 -->  
-    <div class="contenedor_bloque wallpaper-portada1">
-      <div>
-        <div class="center top70 sombra">
-          <h2 class="gris top0 fantasy sombra">Ha dicho que sí, y hay boda</h2>
-        </div>
-        <div class="center top460 cursive">
-          <h3 class="seccionPortada_subtitulo2 gris">Te invitamos a que nos acompañes a celebrar nuestro día</h3>
-        </div>
-        <div class="center audio">
-          <audio controls src='assets/music/a-thousand-years.mp3' type="audio/mp3" controls autoplay>
-            Your browser does not support the <code>audio</code> element.
-          </audio>
-        </div>
-      </div>
-    </div>
+
+    <!-- Bloque 1: Portada principal con frase "ha dicho que sí", foto portada y música de fondo-->
+    <app-bloque1-portada></app-bloque1-portada>
+
+    <!-- Separador: Frase texto + enlace externo +  icon SVG + video -->  
+    <app-separator [isSeparadorSimple]="false" [textoSeparador]="''"></app-separator>
+
+    <!-- Bloque2: Portada 2 - Nombres pareja + frase "nos casamos el ..." -->  
+    <app-bloque2-portada2></app-bloque2-portada2>
+
+    <!-- Separador: Texto simple "Donde y cuando" -->    
+    <app-separator [isSeparadorSimple]="true" [textoSeparador]="valueSeparadorText_1"></app-separator>
     
-    <!-- Separador + SVG -->  
-    <div class="fondo-small">
-      <h2 class="rosa fondo-small-text1">Nuestros caminos se iniciaron a 
-        <a href="https://www.geodatos.net/distancias/de-chimbote-a-granada-andalucia" class="km" target="_blank">9311 km de distancia</a>, 
-        pero el destino nos tenía preparada esta historia tan bonita..
-      </h2>
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="svg-heart1" viewBox="0 0 16 16">
-        <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"/>
-      </svg>
+    <!-- Bloque 3: Iglesia -->    
+    <app-bloque-iglesia></app-bloque-iglesia>
 
-
-      <div class="iframe-video">
-        <iframe src="https://player.vimeo.com/video/894432598?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="100%" height="auto" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Sorpresa para boda de Grace &amp; Edu"></iframe>
-      </div>
-
-    </div>
-
-    <!-- Bloque2 -->  
-    <div class="wallpaper-portada2 contenedor_bloque">
-      <div>
-        <div class="center top460">
-          <h2 class="seccionPortada_subtitulo fantasy gris">¡Nos casamos</h2>
-        </div>
-        <div class="center top480">
-          <h2 class="seccionPortada_subtitulo fantasy gris">el</h2>
-        </div>
-        <div class="center top500">
-          <h2 class="seccionPortada_subtitulo fantasy rosa">09 de diciembre de 2023!</h2>
-        </div>
-      </div>
-    </div>
-
-    <!-- Separador -->      
-    <div class="fondo-small">
-      <h2 class="rosa fondo-small-text2">¿Dónde y cúando?</h2>
-    </div>
+    <!-- Separador: Texto simple "Te compartimos los detalles de la celebración" -->    
+    <app-separator [isSeparadorSimple]="true" [textoSeparador]="valueSeparadorText_2"></app-separator>
     
-    <!-- Bloque3 -->
-    <div class="bloque2 fondo-1 contenedor_bloque">
-      <div class="icono">
-        <img src="assets/images/icono-anillos.png" width="400px" height="400px">
-      </div>
-      <div class="bloque2_body">
-        <div class="bloque2_titulo fantasy center">
-          <p>Ceremonia</p>
-        </div>
-        <div class="bloque2_nombreIglesia center">
-          <!-- <img src="assets/images/iglesia/ceremonia/convento-de-los-Padres-Recoletos2.png" width="600px" height="600px"> -->
-          <h2>Convento De Los <br>Padres Agustinos Recoletos</h2>
-        </div>
-       
-        <div class="bloque2_horaIglesia center">
-          <h2>a las 12:00 h</h2>
-        </div>
-        <div class="bloque2_boton center">
-          <a href="https://goo.gl/maps/EbtpwCFtYvd2nXi18" class="btn" target="_blank">
-            <span>
-              Ver mapa
-            </span>
-            <ion-icon name="navigate-outline" class="navigate"></ion-icon>
-          </a>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Bloque4 -->
-    <div class="bloque3 fondo-1 contenedor_bloque">
-      <div class="icono">
-        <img src="assets/images/copas/icono-copas.png" class="icono-img" width="400px" height="400px">
-      </div>
-      <div class="bloque2_body">
-        <div class="bloque2_titulo fantasy center">
-          <p>Recepción</p>
-        </div>
-        <div class="bloque2_nombreIglesia center">
-          <h2>Jardines de Siddharta</h2>
-        </div>
-     
-        <div class="bloque2_horaIglesia center">
-          <h2>Huétor Vega</h2>
-          <h2>a las 13:45 h</h2>
-        </div>
-        <div class="bloque2_boton center">
-          <a href="https://goo.gl/maps/ukaG3HCCL7DqUMNY6" class="btn" target="_blank">
-            <span>
-              Ver mapa
-            </span>
-            <ion-icon name="navigate-outline" class="navigate"></ion-icon>
-          </a>
-        </div>
-      </div>
-    </div>
+    <!-- Bloque 4: Ceremonia -->
+    <app-bloque-ceremonia></app-bloque-ceremonia>
 
-    <!-- Separador -->  
-    <div class="fondo-small">
-      <h2 class="rosa fondo-small-text2">Te compartimos los detalles de la celebración</h2>
-    </div>
+    <!-- Separador: Texto simple "Te compartimos los detalles de la celebración" -->    
+    <app-separator [isSeparadorSimple]="true" [textoSeparador]="valueSeparadorText_3"></app-separator>
 
-    <!-- Bloque5 -->
-    <div class="bloque4 fondo-2 contenedor_bloque">
-      <div>
-        <div class="icono bloque4_image bot20 first-icono">
-          <img src="assets/images/iglesia/icono-iglesia-300x300.png" width="400px" height="400px">
-        </div>
-
-        <div class="bloque4_texto">
-          <p style="text-align: center;">Ceremonia religiosa<br><strong>12:00</strong></p>
-        </div>
-
-        <div class="linea_vertical">
-          <hr>
-        </div>
-      </div>
-      
-      <div>
-        <div class="icono bloque4_image bot20">
-          <img src="assets/images/copas/icono-copas-300x300.png" width="400px" height="400px">
-        </div>
-
-        <div class="bloque4_texto">
-          <p style="text-align: center;">Cóctel<br><strong>13:45</strong></p>
-        </div>
-
-        <div class="linea_vertical">
-          <hr>
-        </div>
-      </div>
-
-      <div>
-        <div class="icono bloque4_image bot20">
-          <img src="assets/images/platos/icono-platos-300x300.png" width="400px" height="400px">
-        </div>
-
-        <div class="bloque4_texto">
-          <p style="text-align: center;">Banquete<br><strong>15:00</strong></p>
-        </div>
-
-        <div class="linea_vertical">
-          <hr>
-        </div>
-      </div>
-
-      <!-- <div>
-        <div class="icono bloque4_image bot20">
-          <img src="assets/images/anillos/icono-anillos-300x300.png" width="400px" height="400px">
-        </div>
-
-        <div class="bloque4_texto">
-          <p style="text-align: center;">Baile novios<br><strong>22:00</strong></p>
-        </div>
-
-        <div class="linea_vertical">
-          <hr>
-        </div>
-      </div> -->
-
-      <div>
-        <div class="icono bloque4_image bot20">
-          <img src="assets/images/musica/icono-musica-300x300.png" width="400px" height="400px">
-        </div>
-
-        <div class="bloque4_texto">
-          <p style="text-align: center;">A bailar<br><strong>17:00</strong></p>
-        </div>
-
-      </div>
-    </div>
+    <!-- Bloque 5: Detalle celebración - por horas  -->
+    <app-bloque-celebracion-detalle></app-bloque-celebracion-detalle>
   
-    <!-- Separador -->
-    <div class="fondo-small">
-      <h2 class="rosa fondo-small-text2">Galería de Fotos</h2>
-    </div>
+    <!-- Separador: Texto simple "Galería de Fotos" -->    
+    <app-separator [isSeparadorSimple]="true" [textoSeparador]="valueSeparadorText_4"></app-separator>
 
-    <!-- Bloque6 -->
-    <div class="bloque5 fondo-1 contenedor_bloque">
-      <div class="icono bloque4_image first-icono">
-        <img src="assets/images/fotos/icono-fotos-300x300.png" width="400px" height="400px">
-      </div>
-      
-      <div class="text-body-rosa">
-        <p class="p1">Cuando te das cuenta que quieres pasar el resto de tu vida con una persona, quieres que el resto de tu vida empiece lo antes posible…</p>
-      </div>
-      <app-carrusel></app-carrusel>
-    </div>  
 
-    <!-- Bloque7 -->
-    <div class="fondo-small">
-      <h2 class="rosa fondo-small-text2">¡Nos encantaría contar contigo!. <br>Por favor, confirma tu asistencia.</h2>
-      
-      <!-- <div class="bloque-boton">
-        <div class="rosa">
-          <div class="bloque-boton_icono fondo-rosa">
-            <a href="https://0m6nudbkm1s.typeform.com/to/cXutSBNV" target="_blank" class="btn">
-              <span>
-                Confirmar asistencia
-              </span>
-              <ion-icon name="open-outline" class="navigate"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div> -->
+    <!-- Bloque 6: Galería de fotos -->
+    <app-bloque-galeria-fotos></app-bloque-galeria-fotos> 
 
-      <!-- <h3 class="rosa fondo-small-text2">Si lo preferís, podéis confirmarnos vía whatsapp</h3> -->
-      <app-contact-bride-groom></app-contact-bride-groom>
-    </div>
+    <!-- Bloque 7: Confirmar asistencia vía whatsapp -->
+    <app-bloque-confirmar-asistencia-whatsapp></app-bloque-confirmar-asistencia-whatsapp> 
 
-    <!-- SVG DE ANILLOS -->
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="150" height="150" preserveAspectRatio="xMidYMid meet" style="width: 100%; height: 100%; transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_40"><rect width="150" height="150" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_40)"><g style="display: block;" transform="matrix(1,0,0,1,47.178646087646484,22.098051071166992)" opacity="0.5717766949151933"><g opacity="1" transform="matrix(1,0,0,1,15.862000465393066,18.20599937438965)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(178,126,73)" stroke-opacity="1" stroke-width="1.69" d=" M5.723999977111816,13.821000099182129 C5.0320000648498535,13.980999946594238 4.348999977111816,13.571000099182129 3.8429999351501465,13.267999649047852 C3.746000051498413,13.208999633789062 3.6540000438690186,13.154000282287598 3.5880000591278076,13.119999885559082 C1.1929999589920044,11.869000434875488 -0.9959999918937683,10.317999839782715 -2.9170000553131104,8.51099967956543 C-3.372999906539917,8.081999778747559 -3.819999933242798,7.631999969482422 -4.247000217437744,7.172999858856201 C-7.150000095367432,4.053999900817871 -9.331000328063965,0.3230000138282776 -10.729000091552734,-3.9159998893737793 C-11.215999603271484,-5.392000198364258 -11.63700008392334,-6.964000225067139 -10.984000205993652,-8.532999992370605 C-10.770000457763672,-9.045000076293945 -10.244999885559082,-9.968999862670898 -9.12399959564209,-10.395999908447266 C-7.9720001220703125,-10.833999633789062 -6.633999824523926,-10.58899974822998 -5.252999782562256,-9.685999870300293 C-2.2239999771118164,-7.705999851226807 -0.42800000309944153,-4.798999786376953 0.972000002861023,-1.7589999437332153 C1.1929999589920044,-4.679999828338623 1.7610000371932983,-7.297999858856201 2.690000057220459,-9.704000473022461 C3.0209999084472656,-10.557000160217285 3.4240000247955322,-11.456000328063965 4.142000198364258,-12.244999885559082 C4.9730000495910645,-13.157999992370605 6.098999977111816,-13.744000434875488 7.230000019073486,-13.85200023651123 C8.588000297546387,-13.980999946594238 10.378000259399414,-13.345000267028809 11.100000381469727,-11.642999649047852 C11.63700008392334,-10.37399959564209 11.4350004196167,-8.961999893188477 11.20199966430664,-7.738999843597412 C10.869000434875488,-5.986000061035156 10.404000282287598,-4.21999979019165 9.954000473022461,-2.51200008392334 C9.50100040435791,-0.7910000085830688 9.032999992370605,0.9869999885559082 8.704000473022461,2.73799991607666 C8.505000114440918,3.802999973297119 8.354000091552734,4.892000198364258 8.208000183105469,5.945000171661377 C8.135000228881836,6.478000164031982 8.057999610900879,7.03000020980835 7.97599983215332,7.572999954223633 C7.785999774932861,8.835000038146973 7.5329999923706055,10.321999549865723 7.103000164031982,11.795000076293945 C7.083000183105469,11.861000061035156 7.064000129699707,11.942000389099121 7.043000221252441,12.031000137329102 C6.9019999504089355,12.621999740600586 6.690000057220459,13.513999938964844 5.836999893188477,13.789999961853027 C5.798999786376953,13.802000045776367 5.76200008392334,13.812999725341797 5.723999977111816,13.821000099182129z M5.521999835968018,12.897000312805176 C5.521999835968018,12.897000312805176 5.521999835968018,12.897000312805176 5.521999835968018,12.897000312805176z"></path></g></g><g transform="matrix(1,0,0,1,80.962890625,25.525577545166016)" opacity="0.00605899999986093" style="display: none;"><g opacity="1" transform="matrix(1,0,0,1,12.479000091552734,14.140999794006348)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(178,126,73)" stroke-opacity="1" stroke-width="1.69" d=" M-4.139999866485596,9.779000282287598 C-4.744999885559082,9.583000183105469 -4.895999908447266,8.951000213623047 -4.994999885559082,8.531999588012695 C-5.011000156402588,8.468999862670898 -5.021999835968018,8.411999702453613 -5.035999774932861,8.364999771118164 C-5.3420000076293945,7.320000171661377 -5.521999835968018,6.264999866485596 -5.6570000648498535,5.370999813079834 C-5.715000152587891,4.985000133514404 -5.769999980926514,4.593999862670898 -5.821000099182129,4.216000080108643 C-5.925000190734863,3.4690001010894775 -6.0320000648498535,2.696000099182129 -6.173999786376953,1.940999984741211 C-6.406000137329102,0.699999988079071 -6.738999843597412,-0.5619999766349792 -7.059999942779541,-1.781999945640564 C-7.379000186920166,-2.993000030517578 -7.709000110626221,-4.245999813079834 -7.945000171661377,-5.488999843597412 C-8.109000205993652,-6.35699987411499 -8.253999710083008,-7.357999801635742 -7.872000217437744,-8.258000373840332 C-7.360000133514404,-9.46500015258789 -6.091000080108643,-9.916000366210938 -5.127999782562256,-9.824999809265137 C-4.324999809265137,-9.74899959564209 -3.5269999504089355,-9.333000183105469 -2.937999963760376,-8.6850004196167 C-2.428999900817871,-8.125 -2.1429998874664307,-7.48799991607666 -1.9079999923706055,-6.882999897003174 C-1.2489999532699585,-5.176000118255615 -0.847000002861023,-3.319999933242798 -0.6890000104904175,-1.2489999532699585 C0.30399999022483826,-3.4040000438690186 1.5779999494552612,-5.465000152587891 3.7269999980926514,-6.870999813079834 C4.705999851226807,-7.511000156402588 5.6539998054504395,-7.684999942779541 6.4710001945495605,-7.374000072479248 C7.265999794006348,-7.071000099182129 7.638999938964844,-6.415999889373779 7.789999961853027,-6.052999973297119 C8.253000259399414,-4.939000129699707 7.954999923706055,-3.825000047683716 7.609000205993652,-2.7780001163482666 C6.617000102996826,0.2280000001192093 5.070000171661377,2.875 3.01200008392334,5.086999893188477 C2.7090001106262207,5.4120001792907715 2.3919999599456787,5.730999946594238 2.068000078201294,6.035999774932861 C0.7059999704360962,7.316999912261963 -0.8460000157356262,8.416999816894531 -2.5450000762939453,9.303999900817871 C-2.5920000076293945,9.329000473022461 -2.6570000648498535,9.368000030517578 -2.7260000705718994,9.409000396728516 C-3.0850000381469727,9.625 -3.569000005722046,9.916000366210938 -4.059999942779541,9.802000045776367 C-4.085999965667725,9.795000076293945 -4.11299991607666,9.788000106811523 -4.139999866485596,9.779000282287598z M-3.9170000553131104,9.145999908447266 C-3.9170000553131104,9.145999908447266 -3.9149999618530273,9.145999908447266 -3.9149999618530273,9.145999908447266 C-3.9149999618530273,9.145999908447266 -3.9170000553131104,9.145999908447266 -3.9170000553131104,9.145999908447266z"></path></g></g><g transform="matrix(1,0,0,1,20.292999267578125,58.11800003051758)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,39.720001220703125,40.4640007019043)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(178,126,73)" stroke-opacity="1" stroke-width="3.437" d=" M31.128000259399414,0 C31.128000259399414,17.60300064086914 17.191999435424805,31.871999740600586 0,31.871999740600586 C-17.19099998474121,31.871999740600586 -31.128000259399414,17.60300064086914 -31.128000259399414,0 C-31.128000259399414,-17.601999282836914 -17.19099998474121,-31.871999740600586 0,-31.871999740600586 C17.191999435424805,-31.871999740600586 31.128000259399414,-17.601999282836914 31.128000259399414,0z"></path></g></g><g transform="matrix(1,0,0,1,55.82799530029297,63.209999084472656)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,37.23400115966797,37.917999267578125)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(178,126,73)" stroke-opacity="1" stroke-width="3.437" d=" M28.642000198364258,0 C28.642000198364258,16.195999145507812 15.817999839782715,29.326000213623047 -0.0010000000474974513,29.326000213623047 C-15.819000244140625,29.326000213623047 -28.641000747680664,16.195999145507812 -28.641000747680664,0 C-28.641000747680664,-16.195999145507812 -15.819000244140625,-29.326000213623047 -0.0010000000474974513,-29.326000213623047 C15.817999839782715,-29.326000213623047 28.642000198364258,-16.195999145507812 28.642000198364258,0z"></path></g></g></g></svg> -->
-    <!-- <div class="anim-anillos">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" width="150" height="150" preserveAspectRatio="xMidYMid meet" style="width: 100%;height: 100%;transform: translate3d(0px, 0px, 0px);"><defs><clipPath id="__lottie_element_40"><rect width="150" height="150" x="0" y="0"></rect></clipPath></defs><g clip-path="url(#__lottie_element_40)"><g style="display: block;" transform="matrix(1,0,0,1,46.69181823730469,17.8140811920166)" opacity="0.5295812500001307"><g opacity="1" transform="matrix(1,0,0,1,15.862000465393066,18.20599937438965)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(178,126,73)" stroke-opacity="1" stroke-width="1.69" d=" M5.723999977111816,13.821000099182129 C5.0320000648498535,13.980999946594238 4.348999977111816,13.571000099182129 3.8429999351501465,13.267999649047852 C3.746000051498413,13.208999633789062 3.6540000438690186,13.154000282287598 3.5880000591278076,13.119999885559082 C1.1929999589920044,11.869000434875488 -0.9959999918937683,10.317999839782715 -2.9170000553131104,8.51099967956543 C-3.372999906539917,8.081999778747559 -3.819999933242798,7.631999969482422 -4.247000217437744,7.172999858856201 C-7.150000095367432,4.053999900817871 -9.331000328063965,0.3230000138282776 -10.729000091552734,-3.9159998893737793 C-11.215999603271484,-5.392000198364258 -11.63700008392334,-6.964000225067139 -10.984000205993652,-8.532999992370605 C-10.770000457763672,-9.045000076293945 -10.244999885559082,-9.968999862670898 -9.12399959564209,-10.395999908447266 C-7.9720001220703125,-10.833999633789062 -6.633999824523926,-10.58899974822998 -5.252999782562256,-9.685999870300293 C-2.2239999771118164,-7.705999851226807 -0.42800000309944153,-4.798999786376953 0.972000002861023,-1.7589999437332153 C1.1929999589920044,-4.679999828338623 1.7610000371932983,-7.297999858856201 2.690000057220459,-9.704000473022461 C3.0209999084472656,-10.557000160217285 3.4240000247955322,-11.456000328063965 4.142000198364258,-12.244999885559082 C4.9730000495910645,-13.157999992370605 6.098999977111816,-13.744000434875488 7.230000019073486,-13.85200023651123 C8.588000297546387,-13.980999946594238 10.378000259399414,-13.345000267028809 11.100000381469727,-11.642999649047852 C11.63700008392334,-10.37399959564209 11.4350004196167,-8.961999893188477 11.20199966430664,-7.738999843597412 C10.869000434875488,-5.986000061035156 10.404000282287598,-4.21999979019165 9.954000473022461,-2.51200008392334 C9.50100040435791,-0.7910000085830688 9.032999992370605,0.9869999885559082 8.704000473022461,2.73799991607666 C8.505000114440918,3.802999973297119 8.354000091552734,4.892000198364258 8.208000183105469,5.945000171661377 C8.135000228881836,6.478000164031982 8.057999610900879,7.03000020980835 7.97599983215332,7.572999954223633 C7.785999774932861,8.835000038146973 7.5329999923706055,10.321999549865723 7.103000164031982,11.795000076293945 C7.083000183105469,11.861000061035156 7.064000129699707,11.942000389099121 7.043000221252441,12.031000137329102 C6.9019999504089355,12.621999740600586 6.690000057220459,13.513999938964844 5.836999893188477,13.789999961853027 C5.798999786376953,13.802000045776367 5.76200008392334,13.812999725341797 5.723999977111816,13.821000099182129z M5.521999835968018,12.897000312805176 C5.521999835968018,12.897000312805176 5.521999835968018,12.897000312805176 5.521999835968018,12.897000312805176z"></path></g></g><g transform="matrix(1,0,0,1,80.48123168945312,19.872657775878906)" opacity="0.7572032258065191" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,12.479000091552734,14.140999794006348)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(178,126,73)" stroke-opacity="1" stroke-width="1.69" d=" M-4.139999866485596,9.779000282287598 C-4.744999885559082,9.583000183105469 -4.895999908447266,8.951000213623047 -4.994999885559082,8.531999588012695 C-5.011000156402588,8.468999862670898 -5.021999835968018,8.411999702453613 -5.035999774932861,8.364999771118164 C-5.3420000076293945,7.320000171661377 -5.521999835968018,6.264999866485596 -5.6570000648498535,5.370999813079834 C-5.715000152587891,4.985000133514404 -5.769999980926514,4.593999862670898 -5.821000099182129,4.216000080108643 C-5.925000190734863,3.4690001010894775 -6.0320000648498535,2.696000099182129 -6.173999786376953,1.940999984741211 C-6.406000137329102,0.699999988079071 -6.738999843597412,-0.5619999766349792 -7.059999942779541,-1.781999945640564 C-7.379000186920166,-2.993000030517578 -7.709000110626221,-4.245999813079834 -7.945000171661377,-5.488999843597412 C-8.109000205993652,-6.35699987411499 -8.253999710083008,-7.357999801635742 -7.872000217437744,-8.258000373840332 C-7.360000133514404,-9.46500015258789 -6.091000080108643,-9.916000366210938 -5.127999782562256,-9.824999809265137 C-4.324999809265137,-9.74899959564209 -3.5269999504089355,-9.333000183105469 -2.937999963760376,-8.6850004196167 C-2.428999900817871,-8.125 -2.1429998874664307,-7.48799991607666 -1.9079999923706055,-6.882999897003174 C-1.2489999532699585,-5.176000118255615 -0.847000002861023,-3.319999933242798 -0.6890000104904175,-1.2489999532699585 C0.30399999022483826,-3.4040000438690186 1.5779999494552612,-5.465000152587891 3.7269999980926514,-6.870999813079834 C4.705999851226807,-7.511000156402588 5.6539998054504395,-7.684999942779541 6.4710001945495605,-7.374000072479248 C7.265999794006348,-7.071000099182129 7.638999938964844,-6.415999889373779 7.789999961853027,-6.052999973297119 C8.253000259399414,-4.939000129699707 7.954999923706055,-3.825000047683716 7.609000205993652,-2.7780001163482666 C6.617000102996826,0.2280000001192093 5.070000171661377,2.875 3.01200008392334,5.086999893188477 C2.7090001106262207,5.4120001792907715 2.3919999599456787,5.730999946594238 2.068000078201294,6.035999774932861 C0.7059999704360962,7.316999912261963 -0.8460000157356262,8.416999816894531 -2.5450000762939453,9.303999900817871 C-2.5920000076293945,9.329000473022461 -2.6570000648498535,9.368000030517578 -2.7260000705718994,9.409000396728516 C-3.0850000381469727,9.625 -3.569000005722046,9.916000366210938 -4.059999942779541,9.802000045776367 C-4.085999965667725,9.795000076293945 -4.11299991607666,9.788000106811523 -4.139999866485596,9.779000282287598z M-3.9170000553131104,9.145999908447266 C-3.9170000553131104,9.145999908447266 -3.9149999618530273,9.145999908447266 -3.9149999618530273,9.145999908447266 C-3.9149999618530273,9.145999908447266 -3.9170000553131104,9.145999908447266 -3.9170000553131104,9.145999908447266z"></path></g></g><g transform="matrix(1,0,0,1,20.292999267578125,58.11800003051758)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,39.720001220703125,40.4640007019043)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(178,126,73)" stroke-opacity="1" stroke-width="3.437" d=" M31.128000259399414,0 C31.128000259399414,17.60300064086914 17.191999435424805,31.871999740600586 0,31.871999740600586 C-17.19099998474121,31.871999740600586 -31.128000259399414,17.60300064086914 -31.128000259399414,0 C-31.128000259399414,-17.601999282836914 -17.19099998474121,-31.871999740600586 0,-31.871999740600586 C17.191999435424805,-31.871999740600586 31.128000259399414,-17.601999282836914 31.128000259399414,0z"></path></g></g><g transform="matrix(1,0,0,1,55.82799530029297,63.209999084472656)" opacity="1" style="display: block;"><g opacity="1" transform="matrix(1,0,0,1,37.23400115966797,37.917999267578125)"><path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="10" stroke="rgb(178,126,73)" stroke-opacity="1" stroke-width="3.437" d=" M28.642000198364258,0 C28.642000198364258,16.195999145507812 15.817999839782715,29.326000213623047 -0.0010000000474974513,29.326000213623047 C-15.819000244140625,29.326000213623047 -28.641000747680664,16.195999145507812 -28.641000747680664,0 C-28.641000747680664,-16.195999145507812 -15.819000244140625,-29.326000213623047 -0.0010000000474974513,-29.326000213623047 C15.817999839782715,-29.326000213623047 28.642000198364258,-16.195999145507812 28.642000198364258,0z"></path></g></g></g></svg>
-    </div> -->
+    <!-- Bloque 8: Donde dormir: Hoteles y casas rurales -->
+    <app-bloque-hoteles></app-bloque-hoteles>
 
-    <!-- Bloque8 -->
-    <div class="bloque3 fondo-2 contenedor_bloque_size_m">
-      <div class="icono orange">
-        <!-- <img src="assets/images/copas/icono-copas.png" width="400px" height="400px"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16">
-          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
-          <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-        </svg>
-      </div>
-      <div class="bloque2_body">
-        <div class="bloque2_titulo center">
-          <h2 class="text-style size-high negro">¿Os quedaís a dormir?</h2>
-        </div>
-        <div class="text-body-rosa">
-          ¡Genial!. <br>Os ofrecemos algunas opciones
-        </div>
-        <div class="bloque-boton top35">
-          <div class="rosa">
-            <div class="bloque-boton_icono fondo-cream btn">
-              <a href="https://goo.gl/maps/aRUMPmNhFKyrcxsDA" target="_blank">
-                <span>
-                  Ver Hoteles
-                </span>
-                <ion-icon name="navigate-outline" class="navigate"></ion-icon>     
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="bloque-boton top35">
-          <div class="rosa">
-            <div class="bloque-boton_icono fondo-cream btn">
-              <a href="https://www.airbnb.es/s/Hu%C3%A9tor-Vega--Spain/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2023-10-01&monthly_length=3&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&place_id=ChIJj0sw46_kcQ0Rmv9UYXXCMHQ&query=Hu%C3%A9tor%20Vega%2C%20Espa%C3%B1a&date_picker_type=calendar&checkin=2023-12-08&checkout=2023-12-10&adults=5&search_type=unknown" target="_blank">
-                <span>
-                  Ver Casas rurales
-                </span>
-                <ion-icon name="navigate-outline" class="navigate"></ion-icon>     
-              </a>
-            </div>
-          </div>
-        </div>
+    <!-- Bloque 9 -->
+    <app-bloque-compartir-redes-sociales></app-bloque-compartir-redes-sociales>
 
-      </div>
-    </div>
-
-    <!-- Bloque9 -->
-    <div class="fondo-small">
-      <h2 class="rosa fondo-small-text1">Comparte las fotos de nuestra boda con este hashtag</h2>
-      <ion-item class="bloqueHashtag" (click)="gotoHashtag()">
-        <ion-icon name="logo-instagram" class="instragram"></ion-icon>
-        <ion-label class="hashtag">
-          <span>{{hashtag}}</span>
-        </ion-label>
-      </ion-item>
-      <ion-item class="bloqueEtiquetanos">
-        <ion-label>
-          <span>Etiquétanos @gracebtm</span>
-        </ion-label>
-      </ion-item>
-    </div>
-
+    <!-- Separador Icono corazón -->
     <!-- 
       <div class="separador fondo-small">
       <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="542px" height="71px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 542 71.35" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -300,25 +56,9 @@
       </div> 
     -->
     
-    <!-- Separador -->
-    <div class="separador fondo-1 last-part">
-      <h2 class="text-body-rosa">Gracias por acompañarnos en este día tan especial para nosotros</h2>
-    </div>
+    <!-- Bloque Final: Frase agradecimientos -->
+    <app-bloque-frase-agradecimientos></app-bloque-frase-agradecimientos>  
 
-    <!-- <div class="bloque7">
-      <div class="bloque-final">
-        <div class="content">
-          <div class="visible">
-            <p>Gracias</p>
-            <ul>
-              <li>Familia!</li>
-              <li>Amigos!</li>
-              <li>Todos!</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 
   <!-- Bloque Hidden -->

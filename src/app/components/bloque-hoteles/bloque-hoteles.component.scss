@@ -1,0 +1,166 @@
+.bloque_section {
+
+    .icono-img {
+      width: 35%;
+      vertical-align: middle;
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+      border: none;
+      border-radius: 0;
+      box-shadow: none;
+      margin-top: 40px;
+    }
+  
+    svg {
+      margin: 80px 0px 40px 0px;
+      height: 45px;
+      width: auto;
+    }
+  }
+
+  .contenedor_bloque_size_m {
+    height: 550px;
+    width: 100%;
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .icono {
+    text-align: center;
+  }
+
+  .orange {
+    color: #E1B698
+  }
+
+  .bloque_body {
+    margin-top: -20px;
+  }
+
+  .bloque_titulo {
+    font-size: 30px;
+    color: #A7727D;
+    font-family: "Bodoni Moda", San-serif;
+    margin-bottom: 35px;
+  }
+
+  .center {
+    text-align: center;
+    //width: 100%;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .text-style {
+    font-family: "Manuscrita", Sans-serif;
+    font-weight: 400;
+    line-height: 0.8em;
+  }
+
+  .size-high {
+    font-size: 84px;
+  }
+
+  .negro {
+    color: #000 !important;
+  }
+
+  .text-body-rosa {
+    color: #A7727D;
+    font-family: 'Kalam', cursive;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    margin: 0px 25px 0px 25px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .bloque-boton {
+    display: grid;
+    text-align: center;
+    text-decoration: none;
+  
+    margin-left: 10%;
+    margin-right: 10%;
+  
+  
+    a {
+      text-decoration: none;
+      color: var(--e-global-color-3d80131);
+      font-family: "Bodoni Moda", Sans-serif;
+    }
+  
+    span {
+      font-family: 'Kalam', cursive;
+    }
+  }
+
+  .bloque_boton {
+    margin-top: 30px;
+  
+    span {
+      font-family: 'Kalam', cursive;
+    }
+  
+    a {
+      font-size: 19px;
+      border-width: 2px 2px 2px 2px;
+      padding: 10px 15px 10px 15px;
+      font-family: 'Bodoni Moda', Sans-serif;
+      fill: #FFFFFF;
+      color: #FFFFFF;
+      background-color: #A7727D;
+      border-style: solid;
+      box-shadow: inset 3px 3px 3px rgba(255, 255, 255, .7), inset -2px -2px 3px rgba(0, 0, 0, .1), 2px 2px 10px rgba(0, 0, 0, .1);
+      border-color: #EDDBC7;
+      text-decoration: none;
+      border-radius: 20px;
+  
+      .navigate {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .top35 {
+    margin-top: 10px;
+  }
+
+  .rosa {
+    color: #A7727D;
+  }
+
+  .bloque-boton_icono {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    //width: 45%;
+    border-radius: 12px;
+    margin: 0px 10px 0px 10px;
+    height: 50px;
+    border-style: solid;
+    box-shadow: inset 3px 3px 3px rgba(255, 255, 255, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.1), 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .fondo-cream {
+    background-color: #EDDBC7;
+    border-color: #F5F5F500;
+    fill: var(--e-global-color-3d80131);
+    color: var(--e-global-color-3d80131);
+    font-size: 18px;
+  }
+
+  /* Adding transformation when the button is active */
+.btn:active {
+    transform: scale(0.98);
+   // color: rgba(255, 255, 255, 1) !important;
+   // box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+    transition: all 0.2s ease;
+   /* Scaling button to 0.98 to its original size */
+   /* Lowering the shadow */
+ }

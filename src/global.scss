@@ -28,6 +28,14 @@
 /* External */
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Permanent+Marker&display=swap');
 
+@font-face {
+    font-family: 'DarrelAllura';
+    src: url('assets/fuentes/DarrelAllura.ttf') format('truetype');
+  
+}
+
+/* estilos globales de toda la aplicación*/
+
 .fondo-1{
     background-image: url('assets/images/wallpaper-flowers.jpeg');
 }
@@ -40,7 +48,7 @@
     background-image: url('assets/images/wallpaper-portada1.png');
 }
 
-.wallpaper-portada2{
+.global_wallpaper-portada2{
     background-image: url('assets/images/wallpaper-portada2.png');
 }
 

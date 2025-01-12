@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-home',
@@ -7,9 +7,13 @@ import { environment } from 'src/environments/environment';
 })
 export class HomePage {
 
-  
   isModalOpen = false;
   hashtag = environment.hashtag;
+  //valueSeparadorToChild: boolean = true; // Cambia este valor para probar
+  valueSeparadorText_1: string = '¿Dónde es la iglesia?';
+  valueSeparadorText_2: string = '¿Dónde es el banquete?';
+  valueSeparadorText_3: string = 'Te compartimos los detalles de la celebración';
+  valueSeparadorText_4: string = 'Galería de Fotos';  
 
   constructor() {
    }

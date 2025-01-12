@@ -55,15 +55,6 @@
   padding-right: 20px;
 }
 
-.iframe-video {
-  padding-bottom: 35px;
-  background-color: #EDDBC7;
-
-  iframe{
-    background-color: #EDDBC7;
-  }
-}
-
 
 .seccionPortada_subtitulo {
   font-size: 25px;
@@ -81,60 +72,6 @@
   margin: 0;
   padding: 0;
   line-height: 1;
-}
-
-.gris {
-  color: #54595F;
-}
-
-.rosa {
-  color: #A7727D;
-}
-
-.negro {
-  color: #000 !important;
-}
-
-.top70 {
-  top: 70px;
-}
-
-.top430 {
-  top: 430px;
-}
-
-.top440 {
-  top: 440px;
-}
-
-.top460 {
-  top: 460px;
-}
-
-.top480 {
-  top: 480px;
-}
-
-.top500 {
-  top: 500px;
-}
-
-.top520 {
-  top: 520px;
-}
-
-.top530 {
-  top: 530px;
-}
-
-.top550 {
-  top: 550px
-}
-
-.km {
-  text-decoration: underline;
-  text-decoration-color: white;
-  color: #A7727D;
 }
 
 .contenedor_bloque_size_m {
@@ -177,7 +114,10 @@ audio::-webkit-media-controls-panel {
 
 audio::-webkit-media-controls-play-button {}
 
+// BLOQUE 1 - END
 
+
+// SEPARADOR BLOQUE 1 - INI
 .fondo-small {
   background-color: #EDDBC7;
   text-align: center;
@@ -238,6 +178,22 @@ audio::-webkit-media-controls-play-button {}
 
 }
 
+.km {
+  text-decoration: underline;
+  text-decoration-color: white;
+  color: #A7727D;
+}
+
+.iframe-video {
+  padding-bottom: 35px;
+  background-color: #EDDBC7;
+
+  iframe{
+    background-color: #EDDBC7;
+  }
+}
+// SEPARADOR BLOQUE 1 - END
+
 
 .last-part{
   height: 500px;
@@ -278,23 +234,9 @@ audio::-webkit-media-controls-play-button {}
 }
 
 
-.bloque2 {
 
-  //margin-top: 10px;
-  img {
-    width: 35%;
-    vertical-align: middle;
-    display: inline-block;
-    height: auto;
-    max-width: 100%;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    margin-top: 40px;
-  }
-}
 
-.bloque2_body {
+.bloque_body {
   margin-top: -20px;
 }
 
@@ -303,7 +245,7 @@ audio::-webkit-media-controls-play-button {}
 }
 
 
-.bloque2_titulo {
+.bloque_titulo {
   font-size: 30px;
   color: #A7727D;
   font-family: "Bodoni Moda", San-serif;
@@ -314,13 +256,13 @@ audio::-webkit-media-controls-play-button {}
   text-shadow: 4px 4px 4px #aaa;
 }
 
-.bloque2_nombreIglesia {
+.bloque_subtitulo {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
 }
 
-.bloque2_nombreIglesia h2 {
+.bloque_subtitulo h2 {
   font-size: 50px;
   line-height: 0.8em;
   color: black;
@@ -331,24 +273,14 @@ audio::-webkit-media-controls-play-button {}
   font-weight: 400;
 }
 
-// .bloque2_ubicacionIglesia {}
-
-// .bloque2_ubicacionIglesia h2 {
-//   font-size: 19px;
-//   line-height: 1.3em;
-//   color: #A7727D;
-//   font-family: 'Kalam', cursive;
-//   font-weight: 400;
-// }
-
-.bloque2_horaIglesia h2 {
+.bloque_hora h2 {
   font-size: 24px;
   color: black;
   font-family: 'Kalam', cursive;
   font-weight: 400;
 }
 
-.bloque2_boton {
+.bloque_boton {
   margin-top: 30px;
 
   span {
@@ -375,12 +307,8 @@ audio::-webkit-media-controls-play-button {}
   }
 }
 
-
-
-.bloque3 {
-
-  //margin-top: 10px;
-  .icono-img {
+.bloque_iglesia {
+  img {
     width: 35%;
     vertical-align: middle;
     display: inline-block;
@@ -393,7 +321,28 @@ audio::-webkit-media-controls-play-button {}
   }
 }
 
-.bloque4 {
+.bloque_section {
+
+  .icono-img {
+    width: 35%;
+    vertical-align: middle;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 40px;
+  }
+
+  svg {
+    margin: 80px 0px 40px 0px;
+    height: 45px;
+    width: auto;
+  }
+}
+
+.bloque_detalle_celebracion {
   height: 1255px;
 }
 
@@ -401,7 +350,7 @@ audio::-webkit-media-controls-play-button {}
   margin-bottom: 20px;
 }
 
-.bloque4_image {
+.bloque_image {
 
   img {
     width: 35%;
@@ -430,7 +379,7 @@ audio::-webkit-media-controls-play-button {}
   }
 }
 
-.bloque4_texto {
+.bloque_texto {
   color: #54595F;
   //font-family: "Montserrat", Sans-serif;
   font-family: "Kalam", cursive;
@@ -440,7 +389,7 @@ audio::-webkit-media-controls-play-button {}
   margin: -20px 0px 15px 0px;
 }
 
-.bloque5 {
+.bloqueGaleriaFotos {
   height: 730px;
 }
 
@@ -457,14 +406,7 @@ audio::-webkit-media-controls-play-button {}
   }
 }
 
-.bloque3 {
-  svg {
-    margin: 80px 0px 40px 0px;
-    height: 45px;
-    width: auto;
-  }
 
-}
 
 .text-style {
   font-family: "Manuscrita", Sans-serif;
@@ -567,6 +509,55 @@ audio::-webkit-media-controls-play-button {}
 }
 
 
+.gris {
+  color: #54595F;
+}
+
+.rosa {
+  color: #A7727D;
+}
+
+.negro {
+  color: #000 !important;
+}
+
+.top70 {
+  top: 70px;
+}
+
+.top430 {
+  top: 430px;
+}
+
+.top440 {
+  top: 440px;
+}
+
+.top460 {
+  top: 460px;
+}
+
+.top480 {
+  top: 480px;
+}
+
+.top500 {
+  top: 500px;
+}
+
+.top520 {
+  top: 520px;
+}
+
+.top530 {
+  top: 530px;
+}
+
+.top550 {
+  top: 550px
+}
+
+
 .orange {
   color: #E1B698
 }
@@ -574,6 +565,7 @@ audio::-webkit-media-controls-play-button {}
 .orange-dark {
   color: #A7727D;
 }
+
 
 .iframe-quest {
   width: 100%;
@@ -607,7 +599,7 @@ MEDIAS QUERYS
     top: 290px;
   }
 
-  .bloque4 {
+  .bloque_detalle_celebracion {
     height: 1100px;
   }
 

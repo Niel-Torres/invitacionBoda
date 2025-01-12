@@ -1,0 +1,39 @@
+.separador {
+    svg {
+        width: 90%;
+        margin: 20px;
+        fill: #DB8FA3;
+    }
+
+}
+
+.bloqueAgradecimientos{
+    height: 500px;
+    padding-top: 52%;
+    width: 100%;
+    background-color: white;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        font-size: 50px;
+        line-height: 0.8em;
+        color: black;
+        font-family: "Tangerine", serif;
+        text-shadow: 4px 4px 4px #aaa;
+        font-weight: 400;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.text-body-rosa {
+    color: #A7727D;
+    font-family: 'Kalam', cursive;
+    font-weight: 500;
+    text-align: center;
+    font-size: 19px;
+    margin: 0px 25px 0px 25px;
+    padding: 0px 0px 0px 0px;
+}
