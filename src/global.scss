@@ -34,6 +34,8 @@
   
 }
 
+
+  
 /* estilos globales de toda la aplicación*/
 
 .fondo-1{
@@ -50,15 +52,6 @@
 
 .global_wallpaper-portada2{
     background-image: url('assets/images/wallpaper-portada2.png');
-}
-
-
-@media only screen and (max-device-width: 281px) {
-
-    .wallpaper-portada1{
-        background-image: url('assets/images/wallpaper-portada1-small.png');
-    }
-  
 }
 
 

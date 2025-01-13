@@ -1,71 +1,16 @@
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/01.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/02.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/03.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/04.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/05.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/06.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/07.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/08.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/09.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/10.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/11.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/12.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/13.jpeg" class="d-block w-100 h-310">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="assets/images/fotos-pareja/carrusel/14.jpeg" class="d-block w-100 h-310">
-    </div>
 
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
+  <ion-grid class="page-body wallpaper">
+    <ion-row class="bloque-principal">
+      <!-- Columna Derecha -->
+      <ion-col size="12" class="right">
+        <!-- carrusel con swiper.js-->
+        <swiper-container slides-per-view="1" space-between="10" pagination="true" autoplay-delay="2500" loop="true"
+          class="mySwiper">
+          <swiper-slide *ngFor="let image of images">
+            <img [src]="image.src" [alt]="image.alt" />
+          </swiper-slide>
+        </swiper-container>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+

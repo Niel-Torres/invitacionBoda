@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [scrollEvents]="true" [fullscreen]="true" (ionScroll)="onScroll($event)">
   <div class="body">
 
     <!-- Bloque 1: Portada principal con frase "ha dicho que sí", foto portada y música de fondo-->
@@ -59,12 +59,22 @@
     <!-- Bloque Final: Frase agradecimientos -->
     <app-bloque-frase-agradecimientos></app-bloque-frase-agradecimientos>  
 
+    
   </div>
 
+    <div class="arrow-container" *ngIf="showArrow">
+      
+      <ion-icon name="chevron-down-outline"  class="arrow-down"></ion-icon>
+    </div> 
+  
+
   <!-- Bloque Hidden -->
-  <div class="hidden">
+   <!--
+    <div class="hidden">
     <span>
       Para una mejor experiencia, abre la invitación desde tu móvil o gira la pantalla
     </span>
   </div>
+   -->
+
 </ion-content>

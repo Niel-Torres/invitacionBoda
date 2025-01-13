@@ -22,6 +22,7 @@ import { BloqueConfirmarAsistenciaWhatsappComponent } from './components/bloque-
 import { BloqueHotelesComponent } from './components/bloque-hoteles/bloque-hoteles.component';
 import { BloqueCompartirRedesSocialesComponent } from './components/bloque-compartir-redes-sociales/bloque-compartir-redes-sociales.component';
 import { BloqueFraseAgradecimientosComponent } from './components/bloque-frase-agradecimientos/bloque-frase-agradecimientos.component';
+import { CountdownFechaComponent } from './components/countdown-fecha/countdown-fecha.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { BloqueFraseAgradecimientosComponent } from './components/bloque-frase-a
     BloqueConfirmarAsistenciaWhatsappComponent,
     BloqueHotelesComponent,
     BloqueCompartirRedesSocialesComponent,
-    BloqueFraseAgradecimientosComponent
+    BloqueFraseAgradecimientosComponent,
+    CountdownFechaComponent
   ],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],

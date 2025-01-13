@@ -7,6 +7,52 @@
     background-size: cover;
 }
 
+.bloque-portada-imagen {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.clipped1 {
+    //clip-path: url(#__id30);
+    //transform: scale(0.93828, 1.23828);
+    transform-origin: 0px 0px;
+    width: 435.032px;
+    height: 165px;
+    touch-action: pan-x pan-y pinch-zoom;
+
+}
+
+
+
+.clipped-image {
+    clip-path: url(#__id30);
+    //transform: scale(1.14934, 1.14934);
+    //transform: scale(0.9, 1.14934);
+    transform: translate(-22.0131px, -80.214px) translate(237.102px, 331.803px) rotate(1.9deg) translate(-237.102px, -366.803px);
+    transform-origin: 0px 0px;
+    width: 435.032px;
+    //width: auto;
+    //height: 280px;
+    height: 225px;
+    touch-action: pan-x pan-y pinch-zoom;
+
+    object-fit: fill;
+
+    img {
+        transform: translate(12.9869px, -252.214px) translate(237.102px, 334.803px) rotate(-3.1deg) translate(-258.102px, -332.803px);
+    }
+}
+
+.portada-nombres {
+    font-size: 80px;
+    color: rgb(223, 154, 70);
+    font-weight: bold;
+    text-shadow: none;
+}
+
 .center {
     text-align: center;
     //width: 100%;
@@ -21,6 +67,10 @@
 
 .top70 {
     top: 70px;
+}
+
+.bot20 {
+    margin-bottom: 20px;
 }
 
 .top460 {
@@ -47,6 +97,10 @@
     font-family: 'Permanent Marker', cursive;
 }
 
+.darrel {
+    font-family: 'DarrelAllura', msans-serif;
+}
+
 audio {
     //filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
     filter: sepia(80%) saturate(70%) contrast(99%) invert(12%);
@@ -60,6 +114,32 @@ audio::-webkit-media-controls-panel {
 
 audio::-webkit-media-controls-play-button {}
 
+@media only screen and (max-width: 428px) and (orientation: portrait) {
+
+    .contenedor_bloque {
+        height: 710px;
+    }
+
+
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+
+    .contenedor_bloque {
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    .margintop0 {
+        margin-top: -10px;
+    }
+
+    .portada-nombres {
+        font-size: 65px;
+    }
+
+}
 
 @media only screen and (max-device-width: 281px) and (orientation: portrait) {
 

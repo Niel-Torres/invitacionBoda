@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-home',
@@ -13,7 +13,12 @@ export class HomePage {
   valueSeparadorText_1: string = '¿Dónde es la iglesia?';
   valueSeparadorText_2: string = '¿Dónde es el banquete?';
   valueSeparadorText_3: string = 'Te compartimos los detalles de la celebración';
-  valueSeparadorText_4: string = 'Galería de Fotos';  
+  valueSeparadorText_4: string = 'Galería de Fotos'; 
+  showArrow = true; // Controla la visibilidad de la flecha.
+  
+  
+ 
+
 
   constructor() {
    }
@@ -23,6 +28,19 @@ export class HomePage {
      
    }
 
+   onScroll(event: any): void {
+    const scrollTop = event.detail.scrollTop; // Desplazamiento actual desde el inicio
+    const maxScrollTop = 6300; // El valor máximo que identificaste manualmente
+  
+    // Mostrar flecha solo si no se ha alcanzado el final
+    this.showArrow = scrollTop < maxScrollTop;
+  
+    console.log(`scrollTop: ${scrollTop}, maxScrollTop: ${maxScrollTop}, showArrow: ${this.showArrow}`);
+  }
+  
+  
+  
+   
   loadData(evento: any) {
     console.log("Cargando");
   }
