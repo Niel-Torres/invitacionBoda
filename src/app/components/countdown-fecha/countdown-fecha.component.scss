@@ -1,36 +1,42 @@
 .countdown-container {
-    text-align: center;
-    font-family: Arial, sans-serif;
-  
-    h2 {
-      margin-bottom: 1rem;
-      font-family: "Tangerine", serif;
-      text-shadow: 4px 4px 4px #aaa;
-      font-weight: 400;
-      font-size: 50px;
-    }
-  
-    .timer {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-  
-      .time-block {
-        //font-size: 1.5rem;
-        font-weight: bold;
+  text-align: center;
+  font-family: Arial, sans-serif;
 
-        font-family: "Kalam", cursive;
-        font-weight: 400;
-        font-size: 30px;
-        line-height: 1.2em;
-      
-        small {
-          display: block;
-          font-size: 1.3rem;
-          //font-weight: normal;
-          font-weight: 600;
-      
-        }
+  background-image: url('/assets/images/fondos/nube-rose.png');
+  height: 200px;
+
+  h2 {
+    margin-bottom: 1rem;
+    //font-family: "Tangerine", serif;
+    //text-shadow: 4px 4px 4px #aaa;
+    font-weight: 400;
+    font-size: 24px;
+    color: #A7727D;
+    font-family: "Kalam", cursive;
+  }
+
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    .time-block {
+      //font-size: 1.5rem;
+      font-weight: bold;
+
+      font-family: "Kalam", cursive;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1.2em;
+      color: #A7727D;
+    
+      small {
+        display: block;
+        font-size: 1.3rem;
+        //font-weight: normal;
+        font-weight: 600;
+    
       }
     }
   }
+}

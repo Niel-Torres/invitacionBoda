@@ -31,27 +31,72 @@
 @font-face {
     font-family: 'DarrelAllura';
     src: url('assets/fuentes/DarrelAllura.ttf') format('truetype');
-  
+
 }
 
 
-  
+
 /* estilos globales de toda la aplicación*/
 
-.fondo-1{
+.fondo-1 {
     background-image: url('assets/images/wallpaper-flowers.jpeg');
 }
 
-.fondo-2{
+.fondo-2 {
     background-image: url('assets/images/wallpaper-papel.jpeg');
 }
 
-.wallpaper-portada1{
+.wallpaper-portada1 {
     background-image: url('assets/images/wallpaper-portada1.png');
 }
 
-.global_wallpaper-portada2{
+.global_wallpaper-portada2 {
     background-image: url('assets/images/wallpaper-portada2.png');
 }
 
+.icono-animado {
+    cursor: pointer;
+    animation: resaltar 1.5s infinite; /* Animación continua */
+}
 
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    to {
+        transform: translateY(0) scale(1)
+    }
+
+    40% {
+        transform: translateY(-20px) scale(1.2)
+    }
+
+    60% {
+        transform: translateY(-15px) scale(1.3)
+    }
+}
+
+@keyframes resaltar {
+    0% {
+        transform: scale(1);
+        /* Tamaño normal */
+        opacity: 1;
+        /* Totalmente visible */
+    }
+
+    50% {
+        transform: scale(1.2);
+        /* Crece ligeramente */
+        opacity: 0.8;
+        /* Ligero desvanecimiento */
+    }
+
+    100% {
+        transform: scale(1);
+        /* Regresa al tamaño original */
+        opacity: 1;
+        /* Totalmente visible */
+    }
+}

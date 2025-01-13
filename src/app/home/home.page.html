@@ -2,13 +2,13 @@
   <div class="body">
 
     <!-- Bloque 1: Portada principal con frase "ha dicho que sí", foto portada y música de fondo-->
-    <app-bloque1-portada></app-bloque1-portada>
+    <app-bloque1-portada [novio]="pareja1" [novia]="pareja2"></app-bloque1-portada>
 
     <!-- Separador: Frase texto + enlace externo +  icon SVG + video -->  
     <app-separator [isSeparadorSimple]="false" [textoSeparador]="''"></app-separator>
 
     <!-- Bloque2: Portada 2 - Nombres pareja + frase "nos casamos el ..." -->  
-    <app-bloque2-portada2></app-bloque2-portada2>
+    <app-bloque2-portada2 [novio]="pareja1" [novia]="pareja2"></app-bloque2-portada2>
 
     <!-- Separador: Texto simple "Donde y cuando" -->    
     <app-separator [isSeparadorSimple]="true" [textoSeparador]="valueSeparadorText_1"></app-separator>
@@ -36,7 +36,7 @@
     <app-bloque-galeria-fotos></app-bloque-galeria-fotos> 
 
     <!-- Bloque 7: Confirmar asistencia vía whatsapp -->
-    <app-bloque-confirmar-asistencia-whatsapp></app-bloque-confirmar-asistencia-whatsapp> 
+    <app-bloque-confirmar-asistencia-whatsapp [novio]="pareja1" [novia]="pareja2"></app-bloque-confirmar-asistencia-whatsapp> 
 
     <!-- Bloque 8: Donde dormir: Hoteles y casas rurales -->
     <app-bloque-hoteles></app-bloque-hoteles>

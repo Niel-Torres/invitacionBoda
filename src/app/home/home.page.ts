@@ -1,5 +1,6 @@
 import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import { Pareja } from '../interfaces/pareja';
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -15,10 +16,16 @@ export class HomePage {
   valueSeparadorText_3: string = 'Te compartimos los detalles de la celebración';
   valueSeparadorText_4: string = 'Galería de Fotos'; 
   showArrow = true; // Controla la visibilidad de la flecha.
-  
-  
- 
 
+  pareja1: Pareja = {
+    name: 'Jose', 
+    movil: '+34656295612',
+  };
+
+  pareja2: Pareja = {
+    name: 'Maria',
+    movil: '+34656295612',
+  };
 
   constructor() {
    }
