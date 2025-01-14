@@ -4,11 +4,11 @@
 <div class="contenedor_bloque wallpaper-portada1">
   <div>
     <div class="center top70 bot70 sombra">
-      <h2 class="gris margintop0 fantasy sombra">Ha dicho que sí, y hay boda</h2>
+      <h2 class="gris margintop0 fantasy sombra" appTextTypewriter [delay]="100" >Ha dicho que sí, y hay boda</h2>
     </div>
 
     <div class="center top70 bot20 sombra">
-      <p class="darrel portada-nombres">{{novia.name}} y {{novio.name}}</p>
+      <p class="darrel portada-nombres" appFadeInProgressive>{{novia.name}} y {{novio.name}}</p>
     </div>
 
     <!--imagen-->
@@ -19,7 +19,7 @@
       <div class="clipped1">
         <div class="clipped11">
           <div class="clipped-image">
-            <img src="assets/images/portada1-cp.jpg" alt="Imagen con forma">
+            <img src="assets/images/portada1-cp.jpg" alt="Imagen con forma" appFadeInProgressive>
           </div>
         </div>
       </div>

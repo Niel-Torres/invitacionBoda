@@ -38,7 +38,7 @@
 
 .darrel {
     font-family: 'DarrelAllura', msans-serif;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: bold;
 }
 
@@ -102,6 +102,15 @@
         background-size: contain; 
         max-width: 480px;
     }
+}
+
+@media only screen and (max-width: 360px) and (orientation: portrait) {
+
+
+    .darrel {
+        font-size: 50px;
+    }
+
 }
 
 @media only screen and (max-width: 320px) and (orientation: portrait) {

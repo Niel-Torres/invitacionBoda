@@ -23,6 +23,10 @@ import { BloqueHotelesComponent } from './components/bloque-hoteles/bloque-hotel
 import { BloqueCompartirRedesSocialesComponent } from './components/bloque-compartir-redes-sociales/bloque-compartir-redes-sociales.component';
 import { BloqueFraseAgradecimientosComponent } from './components/bloque-frase-agradecimientos/bloque-frase-agradecimientos.component';
 import { CountdownFechaComponent } from './components/countdown-fecha/countdown-fecha.component';
+import { FadeInOnScrollDirective } from './directives/fade-in-on-scroll.directive';
+import { TextTypewriterDirective } from './directives/text-typewriter.directive';
+import { FadeInWithMoveDirective } from './directives/fade-in-with-move.directive';
+import { FadeInProgressiveDirective } from './directive directives/fade-in-progressive.directive';
 
 
 @NgModule({
@@ -42,8 +46,13 @@ import { CountdownFechaComponent } from './components/countdown-fecha/countdown-
     BloqueHotelesComponent,
     BloqueCompartirRedesSocialesComponent,
     BloqueFraseAgradecimientosComponent,
-    CountdownFechaComponent
+    CountdownFechaComponent,
+    FadeInOnScrollDirective,
+    TextTypewriterDirective,
+    FadeInWithMoveDirective,
+    FadeInProgressiveDirective
   ],
+  exports: [FadeInOnScrollDirective, TextTypewriterDirective],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
