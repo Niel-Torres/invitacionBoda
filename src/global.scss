@@ -56,21 +56,25 @@
 
 .icono-animado {
     cursor: pointer;
-    animation: resaltar 1.5s infinite; /* Animación continua */
+    animation: resaltar 1.5s infinite;
+    /* Animación continua */
 }
 
 /* Estado inicial: oculto */
 .fade-in {
     opacity: 0;
-    transform: translateY(30px); /* Ligeramente desplazado hacia abajo */
-    transition: opacity 2.8s ease, transform 2.8s ease; /* Transición suave */
-  }
-  
-  /* Estado final: visible */
-  .fade-in-visible {
+    transform: translateY(30px);
+    /* Ligeramente desplazado hacia abajo */
+    transition: opacity 2.8s ease, transform 2.8s ease;
+    /* Transición suave */
+}
+
+/* Estado final: visible */
+.fade-in-visible {
     opacity: 1;
-    transform: translateY(0); /* Posición normal */
-  }
+    transform: translateY(0);
+    /* Posición normal */
+}
 
 @keyframes bounce {
 

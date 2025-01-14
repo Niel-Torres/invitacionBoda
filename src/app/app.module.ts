@@ -26,7 +26,7 @@ import { CountdownFechaComponent } from './components/countdown-fecha/countdown-
 import { FadeInOnScrollDirective } from './directives/fade-in-on-scroll.directive';
 import { TextTypewriterDirective } from './directives/text-typewriter.directive';
 import { FadeInWithMoveDirective } from './directives/fade-in-with-move.directive';
-import { FadeInProgressiveDirective } from './directive directives/fade-in-progressive.directive';
+import { FadeInProgressiveDirective } from './directives/fade-in-progressive.directive';
 
 
 @NgModule({
