@@ -18,12 +18,12 @@ export class HomePage {
   showArrow = true; // Controla la visibilidad de la flecha.
 
   pareja1: Pareja = {
-    name: 'Jose', 
+    name: 'Edu', 
     movil: '+34656295612',
   };
 
   pareja2: Pareja = {
-    name: 'Maria',
+    name: 'Grace',
     movil: '+34656295612',
   };
 
