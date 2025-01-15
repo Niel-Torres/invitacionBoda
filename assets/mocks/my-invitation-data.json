@@ -1,0 +1,143 @@
+{
+    "invitationtype": "Boda",
+    "invitationName": "Juan y María",
+    "invitationDate": "12/12/2025",
+    "blocks": [
+      {
+        "id": "01",
+        "name": "Bloque1",
+        "separator": [
+          {
+            "text": "",
+            "linkIcon": "",
+            "linkImage": ""
+          }
+        ],
+        "iconHead": "",
+        "title": "Ha dicho que sí, y hay boda",
+        "subtitle": "Juan y María",
+        "description": "Te invitamos a que nos acompañes a celebrar nuestro día",
+        "date": "",
+        "link": ""
+      },
+      {
+        "id": "02",
+        "name": "Bloque2",
+        "separator": [
+          {
+            "text": "Nuestros caminos se iniciaron a 9311 km de distancia , pero el destino nos tenía preparada esta historia tan bonita.. ",
+            "linkIcon": "corazón",
+            "linkImage": "svg-corazón"
+          }
+        ],
+        "iconHead": "",
+        "title": "¡Nos casamos el",
+        "subtitle": "Juan y María",
+        "description": "09 de diciembre de 2023!",
+        "date": "",
+        "link": ""
+      },
+      {
+        "id": "03",
+        "name": "Bloque3",
+        "separator": [
+          {
+            "text": "¿Dónde es la ceremonia?",
+            "linkIcon": "",
+            "linkImage": ""
+          }
+        ],
+        "iconHead": "anillos",
+        "title": "Ceremonia",
+        "subtitle": "Convento de los padres agustinos",
+        "description": "",
+        "date": "12:00",
+        "link": "https://maps.app.goo.gl/1S8YCGdSHV9nR75x5"
+      },
+      {
+        "id": "04",
+        "name": "Bloque4",
+        "separator": [
+          {
+            "text": "¿Dónde es la recepción?",
+            "linkIcon": "",
+            "linkImage": ""
+          }
+        ],
+        "iconHead": "copas",
+        "title": "Recepción",
+        "subtitle": "Jardines de Siddhartta",
+        "description": "Huétor Vega",
+        "date": "13:45",
+        "link": "https://maps.app.goo.gl/1S8YCGdSHV9nR75x5"
+      },
+      {
+        "id": "05",
+        "name": "Bloque5",
+        "separator": [
+          {
+            "text": "Te compartimos los detalle de la celebración",
+            "linkIcon": "",
+            "linkImage": ""
+          }
+        ],
+        "iconHead": "",
+        "title": "",
+        "subtitle": "",
+        "description": "",
+        "date": "",
+        "link": ""
+      },
+      {
+        "id": "06",
+        "name": "Bloque6",
+        "separator": [
+          {
+            "text": "Galería de fotos",
+            "linkIcon": "",
+            "linkImage": ""
+          }
+        ],
+        "iconHead": "camarafoto",
+        "title": "",
+        "subtitle": "",
+        "description": "Cuando te das cuenta que quieres pasar el resto de tu vida con una persona, quieres que el resto de tu vida empiece lo antes posible…",
+        "date": "",
+        "link": ""
+      },
+      {
+        "id": "07",
+        "name": "Bloque7",
+        "separator": [
+          {
+            "text": "¡Nos encantaría contar contigo!. Por favor, confirma tu asistencia.",
+            "linkIcon": "",
+            "linkImage": ""
+          }
+        ],
+        "iconHead": "luna",
+        "title": "¿Os quedaís a dormir?",
+        "subtitle": "",
+        "description": " ¡Genial!. Os ofrecemos algunas opciones ",
+        "date": "",
+        "link": ""
+      },
+      {
+        "id": "08",
+        "name": "Bloque8",
+        "separator": [
+          {
+            "text": "Comparte las fotos de nuestra boda con este hashtag",
+            "linkIcon": "hashtag",
+            "linkImage": "linkhashtag"
+          }
+        ],
+        "iconHead": "",
+        "title": "",
+        "subtitle": "",
+        "description": "Gracias por acompañarnos en este día tan especial para nosotros",
+        "date": "",
+        "link": ""
+      }
+    ]
+  }
