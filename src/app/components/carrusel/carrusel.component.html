@@ -4,7 +4,13 @@
       <!-- Columna Derecha -->
       <ion-col size="12" class="right">
         <!-- carrusel con swiper.js-->
-        <swiper-container slides-per-view="1" space-between="10" pagination="true" autoplay-delay="2500" loop="true"
+        <swiper-container 
+          slides-per-view="1" 
+          space-between="10" 
+          pagination="true" 
+          autoplay-delay="2500" 
+          loop="true"
+          loop-additional-slides="3"
           class="mySwiper">
           <swiper-slide *ngFor="let image of images">
             <img [src]="image.src" [alt]="image.alt" />

@@ -1,14 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 
 import { register } from 'swiper/element/bundle';
 register();
+
 
 @Component({
   selector: 'app-carrusel',
   templateUrl: './carrusel.component.html',
   styleUrls: ['./carrusel.component.scss'],
 })
-export class CarruselComponent  implements OnInit {
+export class CarruselComponent  implements AfterViewInit {
+
 
   images = [
     { src: 'assets/images/fotos-pareja/carrusel/01.jpeg', alt: 'Imagen 1' },
@@ -31,5 +33,13 @@ export class CarruselComponent  implements OnInit {
   constructor() { }
 
   ngOnInit() {}
+
+  ngAfterViewInit(): void {
+    // Asegúrate de que el contenedor Swiper actualice las diapositivas
+    const swiperContainer = document.querySelector('swiper-container');
+    if (swiperContainer && 'swiper' in swiperContainer) {
+      swiperContainer.swiper.update();
+    }
+  }
 
 }

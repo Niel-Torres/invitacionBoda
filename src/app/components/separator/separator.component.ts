@@ -23,8 +23,8 @@ export class SeparatorComponent  implements OnInit {
   }
 
   ngOnChanges() {
-    console.log('isSeparadorSimple:', this.isSeparadorSimple);
-    console.log('textoSeparador:', this.textoSeparador);
+    //console.log('isSeparadorSimple:', this.isSeparadorSimple);
+    //console.log('textoSeparador:', this.textoSeparador);
   }
 
   getInvitationData(){
@@ -32,7 +32,7 @@ export class SeparatorComponent  implements OnInit {
       .subscribe(
         (data: any) => {
           this.invitationData = data;
-          console.log(this.invitationData);
+          //console.log(this.invitationData);
         }
       )
   }

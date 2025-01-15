@@ -20,8 +20,8 @@ export class BloqueCompartirRedesSocialesComponent  implements OnInit {
 
   ngOnInit() {
     let novios = this.novia.name+"y"+this.novio.name;
-    this.usuarioInstagram = "@"+novios;
-    this.hashtag = "#"+novios;
+    this.usuarioInstagram = "@"+this.novia.name+", "+"@"+this.novio.name;
+    this.hashtag = "#Boda"+novios;
   }
 
   gotoHashtag() {

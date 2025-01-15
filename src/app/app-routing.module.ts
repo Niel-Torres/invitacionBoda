@@ -3,12 +3,25 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
+    loadChildren: () => import('./pages/welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'nos-casamos',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: '',
-    redirectTo: 'App',
+    path: 'home',
+    redirectTo: '', // Opcional: Redirigir '/home' a la raíz
+    pathMatch: 'full'
+  },
+  {
+    path: 'invitacion-boda',
+    loadChildren: () => import('./pages/welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: '**',
+    redirectTo: '', // Opcional: Redirigir rutas no encontradas a la raíz
     pathMatch: 'full'
   },
 ];

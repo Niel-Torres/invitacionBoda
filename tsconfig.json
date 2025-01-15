@@ -3,6 +3,12 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": { // Alias para crear rutas de importación
+    "@components/*": ["src/app/components/*"],
+    "@directives/*": ["src/app/directives/*"],
+    "@interfaces/*": ["src/app/interfaces/*"],
+    "@assets/*": ["src/assets/*"] 
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
