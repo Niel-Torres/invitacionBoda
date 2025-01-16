@@ -123,6 +123,24 @@ audio::-webkit-media-controls-play-button {}
 
 }
 
+@media only screen and (max-width: 414px) and (orientation: portrait) {
+    .contenedor_bloque_wallpaper_portada1 {
+        h2 {
+            font-size: 22px ;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    .portada-nombres {
+        font-size: 75px;
+    }
+
+}
+
+
 @media only screen and (max-width: 320px) and (orientation: portrait) {
 
     .contenedor_bloque {

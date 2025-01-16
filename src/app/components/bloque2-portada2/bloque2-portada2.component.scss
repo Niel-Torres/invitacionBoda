@@ -33,13 +33,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 480px;
     //margin: -105px 0px 0px 0px;
+
+    div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }
 
 .darrel {
     font-family: 'DarrelAllura', msans-serif;
     font-size: 55px;
     font-weight: bold;
+    color: black;
 }
 
 .center {
