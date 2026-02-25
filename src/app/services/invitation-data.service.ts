@@ -1,23 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { InvitationData } from '../interfaces/invitation-data.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class InvitationDataService {
 
-  data: any;
-
   constructor(
     private http: HttpClient
   ) { }
 
-  getInvitationData(){
-    this.data = this.http.get('assets/mocks/my-invitation-data.json');
-    return this.data;
-  }
-
-  getBlockById(id: string) {
-    return this.data.blocks.find((block: any) => block.id === id);
+  getInvitationData(): Observable<InvitationData> {
+    return this.http.get<InvitationData>('assets/mocks/my-invitation-data.json');
   }
 }

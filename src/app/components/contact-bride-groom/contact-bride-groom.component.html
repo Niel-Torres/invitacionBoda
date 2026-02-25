@@ -1,16 +1,16 @@
 <div class="container_contacts">
-  <ion-button class="container_contacts_button" (click)="gotoWhatsapp(novia.movil)">
+  <ion-button class="container_contacts_button" (click)="gotoWhatsapp(person2.phone)">
     <ion-icon class="container_contacts_button_whatsapp" name="logo-whatsapp"></ion-icon>
     <ion-label class="container_contacts_button_data">
-      <span>{{novia.name}}</span>
-      <span>{{novia.movil}}</span>
+      <span>{{person2.name}}</span>
+      <span>{{person2.phone}}</span>
     </ion-label>
   </ion-button>
-  <ion-button class="container_contacts_button" (click)="gotoWhatsapp(novio.movil)">
+  <ion-button class="container_contacts_button" (click)="gotoWhatsapp(person1.phone)">
     <ion-icon class="container_contacts_button_whatsapp" name="logo-whatsapp"></ion-icon>
     <ion-label class="container_contacts_button_data">
-      <span>{{novio.name}}</span>
-      <span>{{novio.movil}}</span>
+      <span>{{person1.name}}</span>
+      <span>{{person1.phone}}</span>
     </ion-label>
   </ion-button>
 </div>

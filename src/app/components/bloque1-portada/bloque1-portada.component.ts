@@ -1,28 +1,21 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Pareja } from 'src/app/interfaces/pareja';
+import { Person } from 'src/app/interfaces/invitation-data.interface';
 
 @Component({
   selector: 'app-bloque1-portada',
   templateUrl: './bloque1-portada.component.html',
   styleUrls: ['./bloque1-portada.component.scss'],
 })
-export class Bloque1PortadaComponent  implements OnInit {
+export class Bloque1PortadaComponent implements OnInit {
 
-  @Input() novio!: Pareja; //Recibe los datos de la novia de un componente padre
-  @Input() novia!: Pareja; //Recibe los datos del novio de un componente padre
-
+  @Input() person1!: Person;
+  @Input() person2!: Person;
+  @Input() coverTitle!: string;
+  @Input() coverSubtitle!: string;
+  @Input() musicSrc!: string;
+  @Input() coverImage!: string;
 
   constructor() { }
 
   ngOnInit() {}
-
-  loadData(evento: any) {
-    //console.log("Cargando");
-  }
-
-  reproducir() {
-    const audio = new Audio('assets/music/a-thousand-years.mp3');
-    audio.play();
-  }
-
 }

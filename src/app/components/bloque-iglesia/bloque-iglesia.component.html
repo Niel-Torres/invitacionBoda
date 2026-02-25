@@ -1,24 +1,21 @@
- <!-- Bloque3 -->
- <div class="bloque_section fondo-1 contenedor_bloque">
+<!-- Bloque3 -->
+<div class="bloque_section fondo-1 contenedor_bloque">
   <div class="icono">
     <img src="assets/images/icono-anillos.png" class="icono-img" width="400px" height="400px">
   </div>
   <div class="bloque_body" appFadeInProgressive>
     <div class="bloque_titulo fantasy center">
-      <p>Ceremonia</p>
+      <p>{{venue.title}}</p>
     </div>
     <div class="bloque_subtitulo center" appFadeInProgressive>
-      <h2>Convento De Los <br>Padres Agustinos Recoletos</h2>
+      <h2>{{venue.name}}</h2>
     </div>
-   
     <div class="bloque_hora center" appFadeInProgressive>
-      <h2>a las 12:00 h</h2>
+      <h2>a las {{venue.time}} h</h2>
     </div>
     <div class="bloque_boton center">
-      <a href="https://goo.gl/maps/EbtpwCFtYvd2nXi18" class="btn" target="_blank">
-        <span>
-          Ver mapa
-        </span>
+      <a [href]="venue.mapsUrl" class="btn" target="_blank">
+        <span>Ver mapa</span>
         <ion-icon name="map-outline" class="navigate icono-animado"></ion-icon>
       </a>
     </div>

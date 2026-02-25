@@ -1,25 +1,22 @@
 <!-- Bloque4 -->
-<div class="bloque_section fondo-1 contenedor_bloque" >
+<div class="bloque_section fondo-1 contenedor_bloque">
   <div class="icono">
     <img src="assets/images/copas/icono-copas.png" class="icono-img" width="400px" height="400px">
   </div>
   <div class="bloque_body">
     <div class="bloque_titulo fantasy center" appFadeInProgressive>
-      <p>Recepción</p>
+      <p>{{venue.title}}</p>
     </div>
     <div class="bloque_subtitulo center" appFadeInProgressive>
-      <h2>Jardines de Siddharta</h2>
+      <h2>{{venue.name}}</h2>
     </div>
- 
     <div class="bloque_hora center" appFadeInProgressive>
-      <h2>Huétor Vega</h2>
-      <h2>a las 13:45 h</h2>
+      <h2 *ngIf="venue.location">{{venue.location}}</h2>
+      <h2>a las {{venue.time}} h</h2>
     </div>
     <div class="bloque_boton center">
-      <a href="https://goo.gl/maps/ukaG3HCCL7DqUMNY6" class="btn" target="_blank">
-        <span>
-          Ver mapa
-        </span>
+      <a [href]="venue.mapsUrl" class="btn" target="_blank">
+        <span>Ver mapa</span>
         <ion-icon name="map-outline" class="navigate icono-animado"></ion-icon>
       </a>
     </div>

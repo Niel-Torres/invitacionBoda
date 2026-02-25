@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Pareja } from 'src/app/interfaces/pareja';
+import { Component, Input, OnInit } from '@angular/core';
+import { Person } from 'src/app/interfaces/invitation-data.interface';
 
 @Component({
   selector: 'app-bloque-confirmar-asistencia-whatsapp',
@@ -8,19 +8,12 @@ import { Pareja } from 'src/app/interfaces/pareja';
 })
 export class BloqueConfirmarAsistenciaWhatsappComponent implements OnInit {
 
-  @Input() novio!: Pareja; //Recibe los datos de la novia de un componente padre
-  @Input() novia!: Pareja; //Recibe los datos del novio de un componente padre
+  @Input() person1!: Person;
+  @Input() person2!: Person;
+  @Input() rsvpTitle!: string;
+  @Input() whatsappMessage!: string;
 
-  pareja1!: Pareja;
-  pareja2!: Pareja;
+  constructor() {}
 
-  constructor() {
-
-  }
-
-  ngOnInit() {
-    this.pareja1 = this.novio;
-    this.pareja2 = this.novia;
-  }
-
+  ngOnInit() {}
 }

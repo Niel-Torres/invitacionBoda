@@ -1,143 +1,77 @@
 {
-    "invitationtype": "Boda",
-    "invitationName": "Juan y María",
-    "invitationDate": "12/12/2025",
-    "blocks": [
-      {
-        "id": "01",
-        "name": "Bloque1",
-        "separator": [
-          {
-            "text": "",
-            "linkIcon": "",
-            "linkImage": ""
-          }
-        ],
-        "iconHead": "",
-        "title": "Ha dicho que sí, y hay boda",
-        "subtitle": "Juan y María",
-        "description": "Te invitamos a que nos acompañes a celebrar nuestro día",
-        "date": "",
-        "link": ""
-      },
-      {
-        "id": "02",
-        "name": "Bloque2",
-        "separator": [
-          {
-            "text": "Nuestros caminos se iniciaron a 9311 km de distancia , pero el destino nos tenía preparada esta historia tan bonita.. ",
-            "linkIcon": "corazón",
-            "linkImage": "svg-corazón"
-          }
-        ],
-        "iconHead": "",
-        "title": "¡Nos casamos el",
-        "subtitle": "Juan y María",
-        "description": "09 de diciembre de 2023!",
-        "date": "",
-        "link": ""
-      },
-      {
-        "id": "03",
-        "name": "Bloque3",
-        "separator": [
-          {
-            "text": "¿Dónde es la ceremonia?",
-            "linkIcon": "",
-            "linkImage": ""
-          }
-        ],
-        "iconHead": "anillos",
-        "title": "Ceremonia",
-        "subtitle": "Convento de los padres agustinos",
-        "description": "",
-        "date": "12:00",
-        "link": "https://maps.app.goo.gl/1S8YCGdSHV9nR75x5"
-      },
-      {
-        "id": "04",
-        "name": "Bloque4",
-        "separator": [
-          {
-            "text": "¿Dónde es la recepción?",
-            "linkIcon": "",
-            "linkImage": ""
-          }
-        ],
-        "iconHead": "copas",
-        "title": "Recepción",
-        "subtitle": "Jardines de Siddhartta",
-        "description": "Huétor Vega",
-        "date": "13:45",
-        "link": "https://maps.app.goo.gl/1S8YCGdSHV9nR75x5"
-      },
-      {
-        "id": "05",
-        "name": "Bloque5",
-        "separator": [
-          {
-            "text": "Te compartimos los detalle de la celebración",
-            "linkIcon": "",
-            "linkImage": ""
-          }
-        ],
-        "iconHead": "",
-        "title": "",
-        "subtitle": "",
-        "description": "",
-        "date": "",
-        "link": ""
-      },
-      {
-        "id": "06",
-        "name": "Bloque6",
-        "separator": [
-          {
-            "text": "Galería de fotos",
-            "linkIcon": "",
-            "linkImage": ""
-          }
-        ],
-        "iconHead": "camarafoto",
-        "title": "",
-        "subtitle": "",
-        "description": "Cuando te das cuenta que quieres pasar el resto de tu vida con una persona, quieres que el resto de tu vida empiece lo antes posible…",
-        "date": "",
-        "link": ""
-      },
-      {
-        "id": "07",
-        "name": "Bloque7",
-        "separator": [
-          {
-            "text": "¡Nos encantaría contar contigo!. Por favor, confirma tu asistencia.",
-            "linkIcon": "",
-            "linkImage": ""
-          }
-        ],
-        "iconHead": "luna",
-        "title": "¿Os quedaís a dormir?",
-        "subtitle": "",
-        "description": " ¡Genial!. Os ofrecemos algunas opciones ",
-        "date": "",
-        "link": ""
-      },
-      {
-        "id": "08",
-        "name": "Bloque8",
-        "separator": [
-          {
-            "text": "Comparte las fotos de nuestra boda con este hashtag",
-            "linkIcon": "hashtag",
-            "linkImage": "linkhashtag"
-          }
-        ],
-        "iconHead": "",
-        "title": "",
-        "subtitle": "",
-        "description": "Gracias por acompañarnos en este día tan especial para nosotros",
-        "date": "",
-        "link": ""
-      }
-    ]
+  "type": "boda",
+  "couple": {
+    "person1": { "name": "Jose", "phone": "+34656295612" },
+    "person2": { "name": "Maria", "phone": "+34656295612" }
+  },
+  "countdownDate": "2026-04-09T12:00:00",
+  "music": "assets/music/a-thousand-years.mp3",
+  "coverImage": "assets/images/portada1-cp.jpg",
+
+  "texts": {
+    "coverTitle": "Ha dicho que sí, y hay boda",
+    "coverSubtitle": "Te invitamos a que nos acompañes a celebrar nuestro día",
+    "weddingDateText": "25 de abril de 2026!",
+    "galleryQuote": "Cuando te das cuenta que quieres pasar el resto de tu vida con una persona, quieres que el resto de tu vida empiece lo antes posible…",
+    "rsvpTitle": "¡Nos encantaría contar contigo!.\nPor favor, confirma tu asistencia.",
+    "rsvpWhatsappMessage": "¡Hola! Quiero confirmar mi asistencia a tu boda 😍♥️",
+    "accommodationTitle": "¿Os quedaís a dormir?",
+    "accommodationSubtitle": "¡Genial!.\nOs ofrecemos algunas opciones",
+    "socialTitle": "Comparte las fotos de nuestra boda con este hashtag",
+    "thankYouText": "Gracias por acompañarnos en este día tan especial para nosotros"
+  },
+  "separators": {
+    "afterCover": "",
+    "beforeCeremony": "¿Dónde es la iglesia?",
+    "beforeReception": "¿Dónde es el banquete?",
+    "beforeTimeline": "Te compartimos los detalles de la celebración",
+    "beforeGallery": "Galería de Fotos"
+  },
+  "venues": [
+    {
+      "type": "ceremony",
+      "title": "Ceremonia",
+      "name": "Convento De Los Padres Agustinos Recoletos",
+      "time": "12:00",
+      "mapsUrl": "https://goo.gl/maps/EbtpwCFtYvd2nXi18"
+    },
+    {
+      "type": "reception",
+      "title": "Recepción",
+      "name": "Jardines de Siddharta",
+      "location": "Huétor Vega",
+      "time": "13:45",
+      "mapsUrl": "https://goo.gl/maps/ukaG3HCCL7DqUMNY6"
+    }
+  ],
+  "timeline": [
+    { "time": "12:00", "label": "Ceremonia religiosa", "iconPath": "assets/images/iglesia/icono-iglesia-300x300.png" },
+    { "time": "13:45", "label": "Cóctel", "iconPath": "assets/images/copas/icono-copas-300x300.png" },
+    { "time": "15:00", "label": "Banquete", "iconPath": "assets/images/platos/icono-platos-300x300.png" },
+    { "time": "17:00", "label": "A bailar", "iconPath": "assets/images/musica/icono-musica-300x300.png" }
+  ],
+  "gallery": [
+    "assets/images/fotos-pareja/carrusel/01.jpeg",
+    "assets/images/fotos-pareja/carrusel/02.jpeg",
+    "assets/images/fotos-pareja/carrusel/03.jpeg",
+    "assets/images/fotos-pareja/carrusel/04.jpeg",
+    "assets/images/fotos-pareja/carrusel/05.jpeg",
+    "assets/images/fotos-pareja/carrusel/06.jpeg",
+    "assets/images/fotos-pareja/carrusel/07.jpeg",
+    "assets/images/fotos-pareja/carrusel/08.jpeg",
+    "assets/images/fotos-pareja/carrusel/09.jpeg",
+    "assets/images/fotos-pareja/carrusel/10.jpeg",
+    "assets/images/fotos-pareja/carrusel/11.jpeg",
+    "assets/images/fotos-pareja/carrusel/12.jpeg",
+    "assets/images/fotos-pareja/carrusel/13.jpeg",
+    "assets/images/fotos-pareja/carrusel/14.jpeg"
+  ],
+  "accommodation": {
+    "hotelsUrl": "https://goo.gl/maps/aRUMPmNhFKyrcxsDA",
+    "ruralUrl": "https://www.airbnb.es/s/Hu%C3%A9tor-Vega--Spain/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2023-10-01&monthly_length=3&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&place_id=ChIJj0sw46_kcQ0Rmv9UYXXCMHQ&query=Hu%C3%A9tor%20Vega%2C%20Espa%C3%B1a&date_picker_type=calendar&checkin=2023-12-08&checkout=2023-12-10&adults=5&search_type=unknown"
+  },
+  "social": {
+    "hashtag": "#bodagracedu",
+    "instagramUrl": "https://www.instagram.com/explore/tags/bodagracedu"
   }
+}

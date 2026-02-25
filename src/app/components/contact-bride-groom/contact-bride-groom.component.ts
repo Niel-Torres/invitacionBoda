@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Pareja } from 'src/app/interfaces/pareja';
+import { Component, Input, OnInit } from '@angular/core';
+import { Person } from 'src/app/interfaces/invitation-data.interface';
 import { environment } from 'src/environments/environment';
 
 @Component({
@@ -7,26 +7,23 @@ import { environment } from 'src/environments/environment';
   templateUrl: './contact-bride-groom.component.html',
   styleUrls: ['./contact-bride-groom.component.scss'],
 })
-export class ContactBrideGroomComponent  implements OnInit {
+export class ContactBrideGroomComponent implements OnInit {
 
-  @Input() novio!: Pareja; //Recibe los datos de la novia de un componente padre
-  @Input() novia!: Pareja; //Recibe los datos del novio de un componente padre
-  
+  @Input() person1!: Person;
+  @Input() person2!: Person;
+  @Input() whatsappMessage!: string;
 
   constructor() { }
 
   ngOnInit() {}
 
-  gotoWhatsapp(movil?: string) {    
-    let urlApiWhatsapp = environment.urlApiWhatsapp;
-    let message = "&text=%C2%A1Hola%21+%F0%9F%8C%9F++Quiero+confirmar+mi+asistencia+a+tu+boda+%F0%9F%98%8D%E2%99%A5%EF%B8%8F%F0%9F%92%8D%F0%9F%92%92";
-    let urlChatWhatsapp = '';
-    
-    if (movil) {
-      urlChatWhatsapp = urlApiWhatsapp + movil + message;
+  gotoWhatsapp(phone?: string) {
+    const urlApiWhatsapp = environment.urlApiWhatsapp;
+    const encodedMessage = encodeURIComponent(this.whatsappMessage);
+
+    if (phone) {
+      const url = `${urlApiWhatsapp}${phone}&text=${encodedMessage}`;
+      window.open(url, '_blank');
     }
-
-    window.open(urlChatWhatsapp, "_blank");
   }
-
 }

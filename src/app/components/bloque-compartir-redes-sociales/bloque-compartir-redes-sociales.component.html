@@ -1,17 +1,9 @@
 <div class="fondo-small">
-  <h2 class="rosa fondo-small-text1" appFadeInProgressive>Comparte las fotos de nuestra boda con este hashtag</h2>
+  <h2 class="rosa fondo-small-text1" appFadeInProgressive>{{socialTitle}}</h2>
   <ion-item class="bloqueHashtag" (click)="gotoHashtag()">
     <ion-icon name="logo-instagram" class="instragram"></ion-icon>
     <ion-label class="hashtag" appFadeInProgressive>
-      <span>{{hashtag}}</span>
+      <span>{{social.hashtag}}</span>
     </ion-label>
   </ion-item>
-  <ion-item class="bloqueEtiquetanos" appFadeInProgressive>
-    <ion-label>
-      <span>Etiquétanos {{usuarioInstagram}}</span>
-    </ion-label>
-  </ion-item>
-
-   
-  
 </div>
