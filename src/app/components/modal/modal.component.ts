@@ -16,7 +16,7 @@ export class ModalComponent  implements OnInit {
   }
 
   setOpen(boolean: boolean){
-    console.log("push");
+    //console.log("push");
   }
 
 

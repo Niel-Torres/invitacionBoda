@@ -17,7 +17,7 @@ export class Bloque1PortadaComponent  implements OnInit {
   ngOnInit() {}
 
   loadData(evento: any) {
-    console.log("Cargando");
+    //console.log("Cargando");
   }
 
   reproducir() {

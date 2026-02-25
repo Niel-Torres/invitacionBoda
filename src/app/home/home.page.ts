@@ -42,14 +42,14 @@ export class HomePage {
     // Mostrar flecha solo si no se ha alcanzado el final
     this.showArrow = scrollTop < maxScrollTop;
   
-    console.log(`scrollTop: ${scrollTop}, maxScrollTop: ${maxScrollTop}, showArrow: ${this.showArrow}`);
+    //console.log(`scrollTop: ${scrollTop}, maxScrollTop: ${maxScrollTop}, showArrow: ${this.showArrow}`);
   }
   
   
   
    
   loadData(evento: any) {
-    console.log("Cargando");
+    //console.log("Cargando");
   }
 
   reproducir() {
