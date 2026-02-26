@@ -7,43 +7,46 @@
     background-size: cover;
 }
 
+.portada-clip-def {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
 .bloque-portada-imagen {
     display: flex;
-    flex-direction: column;
-    align-content: center;
     justify-content: center;
     align-items: center;
+    padding: 45px 0px 10px 0;
 }
 
-.clipped1 {
-    //clip-path: url(#__id30);
-    //transform: scale(0.93828, 1.23828);
-    transform-origin: 0px 0px;
-    width: 435.032px;
-    height: 165px;
-    touch-action: pan-x pan-y pinch-zoom;
-
-}
-
-
-
-.clipped-image {
-    clip-path: url(#__id30);
-    //transform: scale(1.14934, 1.14934);
-    //transform: scale(0.9, 1.14934);
-    transform: translate(-22.0131px, -80.214px) translate(237.102px, 331.803px) rotate(1.9deg) translate(-237.102px, -366.803px);
-    transform-origin: 0px 0px;
-    width: 435.032px;
-    //width: auto;
-    //height: 280px;
-    height: 225px;
-    touch-action: pan-x pan-y pinch-zoom;
-
-    object-fit: fill;
+// El path del clip ocupa exactamente 435×280px
+.portada-foto {
+    width: 435px;
+    height: 280px;
+    clip-path: url(#portada-clip);
+    overflow: hidden;
 
     img {
-        transform: translate(12.9869px, -252.214px) translate(237.102px, 334.803px) rotate(-3.1deg) translate(-258.102px, -332.803px);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
     }
+}
+
+@media (max-width: 435px) {
+    .portada-foto { zoom: 0.88; }
+}
+@media (max-width: 390px) {
+    .portada-foto { zoom: 0.82; }
+}
+@media (max-width: 360px) {
+    .portada-foto { zoom: 0.76; }
+}
+@media (max-width: 320px) {
+    .portada-foto { zoom: 0.68; }
 }
 
 .portada-nombres {

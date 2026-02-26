@@ -14,6 +14,7 @@ export class Bloque1PortadaComponent implements OnInit {
   @Input() coverSubtitle!: string;
   @Input() musicSrc!: string;
   @Input() coverImage!: string;
+  @Input() coverBackground!: string;
 
   constructor() { }
 

@@ -60,6 +60,7 @@ export interface InvitationData {
   countdownDate: string;
   music: string;
   coverImage: string;
+  coverBackground: string;
   texts: InvitationTexts;
   separators: InvitationSeparators;
   venues: Venue[];
