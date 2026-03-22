@@ -1,0 +1,7 @@
+{
+  "buildCommand": "npm run build:prod",
+  "outputDirectory": "www",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
