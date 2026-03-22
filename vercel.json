@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm run build:prod",
+  "buildCommand": "npx ionic build --prod",
   "outputDirectory": "www",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
