@@ -1,7 +1,7 @@
 <!-- Bloque 1 -->
 <div class="contenedor_bloque" [style.background-image]="'url(' + coverBackground + ')'">
   <div>
-    <!-- Encabezado boda -->
+    <!-- Encabezado invitación -->
     <ng-container *ngIf="invitationType !== 'babyshower'">
       <div class="center top70 bot70 sombra">
         <h2 class="gris margintop0 fantasy sombra" appTextTypewriter [delay]="100">{{coverTitle}}</h2>
@@ -11,14 +11,17 @@
       </div>
     </ng-container>
 
-    <!-- Encabezado babyshower -->
+    <!-- Encabezado texto invitación -->
     <ng-container *ngIf="invitationType === 'babyshower'">
       <div class="center bs-header">
         <h2 class="bs-title" appFadeInProgressive>BabyShower</h2>
-        <p class="bs-name"  appFadeInProgressive>{{babyName}}</p>
-        <div class="center cursive" appFadeInProgressive>
+
+         <div class="center cursive" appFadeInProgressive>
           <h3 class="seccionPortada_subtitulo2 gris">{{coverSubtitle}}</h3>
         </div>
+
+        <p class="bs-name"  appFadeInProgressive>{{babyName}}</p>
+       
       </div>
     </ng-container>
 
