@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonContent } from '@ionic/angular';
 import { InvitationDataService } from '../services/invitation-data.service';
 import { InvitationData } from '../interfaces/invitation-data.interface';
 
@@ -8,6 +9,8 @@ import { InvitationData } from '../interfaces/invitation-data.interface';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+
+  @ViewChild(IonContent) content!: IonContent;
 
   invitationData: InvitationData | null = null;
   showArrow = true;
@@ -20,9 +23,9 @@ export class HomePage implements OnInit {
     });
   }
 
-  onScroll(event: any): void {
-    const scrollTop = event.detail.scrollTop;
-    const maxScrollTop = 6300;
-    this.showArrow = scrollTop < maxScrollTop;
+  async onScroll(event: any): Promise<void> {
+    const scrollEl = await this.content.getScrollElement();
+    const nearBottom = event.detail.scrollTop + scrollEl.clientHeight >= scrollEl.scrollHeight - 60;
+    this.showArrow = !nearBottom;
   }
 }
