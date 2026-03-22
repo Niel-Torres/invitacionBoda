@@ -1,8 +1,8 @@
 {
   "type": "babyshower",
   "couple": {
-    "person1": { "name": "Katerine", "phone": "+34605729559" },
-    "person2": { "name": "Niel", "phone": "+34656295612" }
+    "person1": { "name": "Niel", "phone": "+34605729559" },
+    "person2": { "name": "Katerine", "phone": "+34656295612" }
   },
   "countdownDate": "2026-04-25T12:00:00",
   "eventVenue": {
@@ -12,9 +12,9 @@
   },
   "babyName": "Valentina",
   "music": "assets/music/las-cosas-peque.mp3",
-  "coverImage": "assets/new_images/papis_2.png",
-  "coverBackground": "assets/new_images/wallpapers/portada1.png",
-  "thanksBackground": "assets/new_images/wallpapers/portada-final.png",
+  "coverImage": "assets/new_images/papis_2.webp",
+  "coverBackground": "assets/new_images/wallpapers/portada1.webp",
+  "thanksBackground": "assets/new_images/wallpapers/portada-final.webp",
 
 
   "blocks": {
@@ -34,7 +34,7 @@
 
   "welcome": {
     "title": "¡Tienes una invitación especial!",
-    "subtitle": "Toca el sello para abrirla",
+    "subtitle": "Presiona en el oso para abrirla",
     "buttonText": "Abrir"
   },
 
@@ -45,7 +45,7 @@
     "galleryQuote": "Cuando te das cuenta que quieres pasar el resto de tu vida con una persona, quieres que el resto de tu vida empiece lo antes posible…",
     "rsvpTitle": "¡Nos encantaría contar contigo!.\n",
     "rsvpTitle2": "Por favor, confirma tu asistencia.",
-    "rsvpBackground": "assets/new_images/wallpapers/portada-final.png",
+    "rsvpBackground": "assets/new_images/wallpapers/portada-final.webp",
     "rsvpWhatsappMessage": "¡Hola! Quiero confirmar mi asistencia al BabyShower✨🍼✨",
     "accommodationTitle": "¿Os quedaís a dormir?",
     "accommodationSubtitle": "¡Genial!.\nOs ofrecemos algunas opciones",
@@ -58,7 +58,7 @@
     "complexQuote": "Hay noticias que cambian la vida para siempre… Y esta es la nuestra 🥹✨",
     "complexQuote2": "Después de mucho soñar, esperar y aprender… entendimos que los tiempos de Dios son perfectos 🙏🏽✨",
     "complexQuote3": "Y hoy, con el corazón lleno de amor, podemos decirlo: ¡Vamos a ser papás! 🫶🏼🍼",
-    "complexQuoteBackground": "assets/new_images/wallpapers/portada-clean.png",
+    "complexQuoteBackground": "assets/new_images/wallpapers/portada-clean.webp",
     "afterCover": "",
     "beforeCeremony": "¿Dónde es la iglesia?",
     "beforeReception": "¿Dónde es el banquete?",

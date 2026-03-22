@@ -15,8 +15,8 @@
     <ng-container *ngIf="invitationType === 'babyshower'">
       <div class="center bs-header">
         <h2 class="bs-title" appFadeInProgressive>BabyShower</h2>
-        <p class="bs-name" appFadeInProgressive>{{babyName}}</p>
-        <div class="center cursive">
+        <p class="bs-name"  appFadeInProgressive>{{babyName}}</p>
+        <div class="center cursive" appFadeInProgressive>
           <h3 class="seccionPortada_subtitulo2 gris">{{coverSubtitle}}</h3>
         </div>
       </div>
@@ -30,7 +30,7 @@
     </div>
 
     
-    <div class="center">
+    <div class="center" appFadeInProgressive>
       <audio controls [src]="musicSrc" type="audio/mp3" autoplay>
         Your browser does not support the <code>audio</code> element.
       </audio>

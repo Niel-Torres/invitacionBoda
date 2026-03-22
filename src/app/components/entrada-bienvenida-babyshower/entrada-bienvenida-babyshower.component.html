@@ -7,11 +7,11 @@
 
   <div class="scene">
 
-    <p class="welcome-title">
+    <p class="welcome-title" appTextTypewriter>
       {{ data?.welcome?.title || '¡Tienes una invitación especial!' }}
     </p>
 
-    <div class="envelope-wrapper">
+    <div class="envelope-wrapper" appFadeInProgressive>
       <div class="envelope" [class.open]="isOpen">
 
         <!-- Decorative fold lines (left, right, bottom triangles) -->
@@ -36,7 +36,9 @@
 
         <!-- Seal button (centered on the flap) -->
         <button class="env-seal" (click)="openEnvelope()" [disabled]="isOpen" aria-label="Abrir invitación">
-          <span class="env-seal__icon">💕</span>
+          <span class="env-seal__ring env-seal__ring--1"></span>
+          <span class="env-seal__ring env-seal__ring--2"></span>
+          <span class="env-seal__icon">🧸</span>
         </button>
 
       </div>
