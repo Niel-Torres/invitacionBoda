@@ -1,0 +1,50 @@
+<section class="welcome-babyshower">
+
+  <!-- Decorative floating stars -->
+  <div class="deco deco--star1">✦</div>
+  <div class="deco deco--star2">✦</div>
+  <div class="deco deco--star3">✦</div>
+
+  <div class="scene">
+
+    <p class="welcome-title">
+      {{ data?.welcome?.title || '¡Tienes una invitación especial!' }}
+    </p>
+
+    <div class="envelope-wrapper">
+      <div class="envelope" [class.open]="isOpen">
+
+        <!-- Decorative fold lines (left, right, bottom triangles) -->
+        <div class="env-fold env-fold--left"></div>
+        <div class="env-fold env-fold--right"></div>
+        <div class="env-fold env-fold--bottom"></div>
+
+        <!-- Inner invitation card (slides up when envelope opens) -->
+        <div class="env-card">
+          <div class="env-card__content">
+            <p class="env-card__names">
+              {{ data?.couple?.person1?.name }}<span class="env-card__amp"> &amp; </span>{{ data?.couple?.person2?.name }}
+            </p>
+            <div class="env-card__divider"></div>
+            <p class="env-card__event">{{ data?.texts?.coverTitle }}</p>
+            <p class="env-card__date">{{ data?.texts?.weddingDateText }}</p>
+          </div>
+        </div>
+
+        <!-- Top flap (rotates open on click) -->
+        <div class="env-flap"></div>
+
+        <!-- Seal button (centered on the flap) -->
+        <button class="env-seal" (click)="openEnvelope()" [disabled]="isOpen" aria-label="Abrir invitación">
+          <span class="env-seal__icon">💕</span>
+        </button>
+
+      </div>
+    </div>
+
+    <p class="welcome-cta" [class.fade-out]="isOpen">
+      {{ data?.welcome?.subtitle || 'Toca el sello para abrirla' }}
+    </p>
+
+  </div>
+</section>

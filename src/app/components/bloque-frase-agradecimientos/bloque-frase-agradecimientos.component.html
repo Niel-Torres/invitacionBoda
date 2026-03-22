@@ -1,13 +1,12 @@
-<div class="separador fondo-1 bloqueAgradecimientos">
+<div class="separador bloqueAgradecimientos"
+     [style.background-image]="backgroundImage ? 'url(' + backgroundImage + ')' : 'none'">
   <div class="bloqueAgradecimientos-subbloque">
     <div class="bloque-titulo">
       <h2 class="text-body-rosa" appTextTypewriter [delay]="100">{{thankYouText}}</h2>
+      <h2 class="text-body-rosa" appTextTypewriter [delay]="100">{{thankYouText2}}</h2>
     </div>
-    <div class="icono bloque_image">
-      <img src="assets/images/anillos/rings.gif" class="icono-img" width="400px" height="400px" appFadeInProgressive>
-    </div>
-    <div class="bloque-contandor">
-      <!-- Countdown: Fecha boda -->
+    <div class="bloque-contandor" *ngIf="showCountdown">
+      <app-fecha-display [targetDate]="countdownDate"></app-fecha-display>
       <app-countdown-fecha [targetDate]="countdownDate"></app-countdown-fecha>
     </div>
   </div>

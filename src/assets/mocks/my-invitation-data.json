@@ -1,26 +1,64 @@
 {
-  "type": "boda",
+  "type": "babyshower",
   "couple": {
-    "person1": { "name": "Jose", "phone": "+34656295612" },
-    "person2": { "name": "Maria", "phone": "+34656295612" }
+    "person1": { "name": "Katerine", "phone": "+34605729559" },
+    "person2": { "name": "Niel", "phone": "+34656295612" }
   },
-  "countdownDate": "2026-04-09T12:00:00",
-  "music": "assets/music/a-thousand-years.mp3",
-  "coverImage": "assets/new_images/pareja1.webp",
+  "countdownDate": "2026-04-25T12:00:00",
+  "eventVenue": {
+    "name": "Av. de Fuenlabrada, 91, 28912 Leganés, Madrid",
+    "address": "",
+    "mapsUrl": "https://maps.app.goo.gl/TGYfRHi1LpyGSEGD6"
+  },
+  "babyName": "Valentina",
+  "music": "assets/music/las-cosas-peque.mp3",
+  "coverImage": "assets/new_images/papis_2.png",
+  "coverBackground": "assets/new_images/wallpapers/portada1.png",
+  "thanksBackground": "assets/new_images/wallpapers/portada-final.png",
+
+
+  "blocks": {
+    "portada":        true,
+    "separadorCita":  true,
+    "portada2":       false,
+    "iglesia":        false,
+    "ceremonia":      false,
+    "timeline":       false,
+    "galeria":        false,
+    "rsvp":           true,
+    "hoteles":        false,
+    "redes":          false,
+    "agradecimientos": false,
+    "countdown":       true
+  },
+
+  "welcome": {
+    "title": "¡Tienes una invitación especial!",
+    "subtitle": "Toca el sello para abrirla",
+    "buttonText": "Abrir"
+  },
 
   "texts": {
-    "coverTitle": "Ha dicho que sí, y hay boda",
-    "coverSubtitle": "Te invitamos a que nos acompañes a celebrar nuestro día",
+    "coverTitle": "Babyshower",
+    "coverSubtitle": "Te invitamos a celebrar con nosotros la llegada de nuestro bebé",
     "weddingDateText": "25 de abril de 2026!",
     "galleryQuote": "Cuando te das cuenta que quieres pasar el resto de tu vida con una persona, quieres que el resto de tu vida empiece lo antes posible…",
-    "rsvpTitle": "¡Nos encantaría contar contigo!.\nPor favor, confirma tu asistencia.",
-    "rsvpWhatsappMessage": "¡Hola! Quiero confirmar mi asistencia a tu boda 😍♥️",
+    "rsvpTitle": "¡Nos encantaría contar contigo!.\n",
+    "rsvpTitle2": "Por favor, confirma tu asistencia.",
+    "rsvpBackground": "assets/new_images/wallpapers/portada-final.png",
+    "rsvpWhatsappMessage": "¡Hola! Quiero confirmar mi asistencia al BabyShower✨🍼✨",
     "accommodationTitle": "¿Os quedaís a dormir?",
     "accommodationSubtitle": "¡Genial!.\nOs ofrecemos algunas opciones",
     "socialTitle": "Comparte las fotos de nuestra boda con este hashtag",
-    "thankYouText": "Gracias por acompañarnos en este día tan especial para nosotros"
+    "thankYouText": "Nos encantaría contar contigo en este día tan especial para nosotros.",
+    "thankYouText2": "Por favor confirma tu asistencia lo antes posible. ¡Gracias!"
+
   },
   "separators": {
+    "complexQuote": "Hay noticias que cambian la vida para siempre… Y esta es la nuestra 🥹✨",
+    "complexQuote2": "Después de mucho soñar, esperar y aprender… entendimos que los tiempos de Dios son perfectos 🙏🏽✨",
+    "complexQuote3": "Y hoy, con el corazón lleno de amor, podemos decirlo: ¡Vamos a ser papás! 🫶🏼🍼",
+    "complexQuoteBackground": "assets/new_images/wallpapers/portada-clean.png",
     "afterCover": "",
     "beforeCeremony": "¿Dónde es la iglesia?",
     "beforeReception": "¿Dónde es el banquete?",
@@ -71,7 +109,7 @@
     "ruralUrl": "https://www.airbnb.es/s/Hu%C3%A9tor-Vega--Spain/homes?tab_id=home_tab&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2023-10-01&monthly_length=3&price_filter_input_type=0&price_filter_num_nights=5&channel=EXPLORE&refinement_paths%5B%5D=%2Fhomes&place_id=ChIJj0sw46_kcQ0Rmv9UYXXCMHQ&query=Hu%C3%A9tor%20Vega%2C%20Espa%C3%B1a&date_picker_type=calendar&checkin=2023-12-08&checkout=2023-12-10&adults=5&search_type=unknown"
   },
   "social": {
-    "hashtag": "#bodagracedu",
+    "hashtag": "#babyshowerKateNiel",
     "instagramUrl": "https://www.instagram.com/explore/tags/bodagracedu"
   }
 }

@@ -3,62 +3,86 @@
 
     <!-- Bloque 1: Portada principal con frase "ha dicho que sí", foto portada y música de fondo-->
     <app-bloque1-portada
+      *ngIf="invitationData.blocks.portada"
       [person1]="invitationData.couple.person1"
       [person2]="invitationData.couple.person2"
       [coverTitle]="invitationData.texts.coverTitle"
       [coverSubtitle]="invitationData.texts.coverSubtitle"
       [musicSrc]="invitationData.music"
+      [babyName]="invitationData.babyName"
       [coverImage]="invitationData.coverImage"
-      [coverBackground]="invitationData.coverBackground">
+      [coverBackground]="invitationData.coverBackground"
+      [invitationType]="invitationData.type">
     </app-bloque1-portada>
 
-    <!-- Separador: Frase texto + enlace externo + icon SVG + video -->
-    <app-separator [isSeparadorSimple]="false" [textoSeparador]="invitationData.separators.afterCover"></app-separator>
+    <!-- Separador: Frase texto + icono SVG (cita compleja) -->
+    <app-separator
+      *ngIf="invitationData.blocks.separadorCita"
+      [isSeparadorSimple]="false"
+      [textoSeparador]="invitationData.separators.afterCover"
+      [backgroundImage]="invitationData.separators.complexQuoteBackground || ''">
+    </app-separator>
 
-    <!-- Bloque2: Portada 2 - Nombres pareja + frase "nos casamos el ..." -->
+      <!-- Bloque Countdown: Cuenta atrás independiente -->
+    <div class="countdown-wrapper" *ngIf="invitationData.blocks.countdown">
+      <app-fecha-display
+        [targetDate]="invitationData.countdownDate"
+        [venueName]="invitationData.eventVenue?.name"
+        [venueAddress]="invitationData.eventVenue?.address"
+        [mapsUrl]="invitationData.eventVenue?.mapsUrl">
+      </app-fecha-display>
+      <app-countdown-fecha [targetDate]="invitationData.countdownDate"></app-countdown-fecha>
+    </div>
+
+    <!-- Bloque 2: Portada 2 - Nombres pareja + fecha -->
     <app-bloque2-portada2
+      *ngIf="invitationData.blocks.portada2"
       [person1]="invitationData.couple.person1"
       [person2]="invitationData.couple.person2"
       [weddingDateText]="invitationData.texts.weddingDateText">
     </app-bloque2-portada2>
 
-    <!-- Separador: Texto simple "¿Dónde es la iglesia?" -->
-    <app-separator [isSeparadorSimple]="true" [textoSeparador]="invitationData.separators.beforeCeremony"></app-separator>
-
     <!-- Bloque 3: Iglesia -->
-    <app-bloque-iglesia [venue]="invitationData.venues[0]"></app-bloque-iglesia>
+    <ng-container *ngIf="invitationData.blocks.iglesia">
+      <app-separator [isSeparadorSimple]="true" [textoSeparador]="invitationData.separators.beforeCeremony"></app-separator>
+      <app-bloque-iglesia [venue]="invitationData.venues[0]"></app-bloque-iglesia>
+    </ng-container>
 
-    <!-- Separador: Texto simple "¿Dónde es el banquete?" -->
-    <app-separator [isSeparadorSimple]="true" [textoSeparador]="invitationData.separators.beforeReception"></app-separator>
+    <!-- Bloque 4: Ceremonia / Recepción -->
+    <ng-container *ngIf="invitationData.blocks.ceremonia">
+      <app-separator [isSeparadorSimple]="true" [textoSeparador]="invitationData.separators.beforeReception"></app-separator>
+      <app-bloque-ceremonia [venue]="invitationData.venues[1]"></app-bloque-ceremonia>
+    </ng-container>
 
-    <!-- Bloque 4: Ceremonia -->
-    <app-bloque-ceremonia [venue]="invitationData.venues[1]"></app-bloque-ceremonia>
-
-    <!-- Separador: Texto simple "Te compartimos los detalles de la celebración" -->
-    <app-separator [isSeparadorSimple]="true" [textoSeparador]="invitationData.separators.beforeTimeline"></app-separator>
-
-    <!-- Bloque 5: Detalle celebración - por horas -->
-    <app-bloque-celebracion-detalle [timeline]="invitationData.timeline"></app-bloque-celebracion-detalle>
-
-    <!-- Separador: Texto simple "Galería de Fotos" -->
-    <app-separator [isSeparadorSimple]="true" [textoSeparador]="invitationData.separators.beforeGallery"></app-separator>
+    <!-- Bloque 5: Timeline detalle celebración -->
+    <ng-container *ngIf="invitationData.blocks.timeline">
+      <app-separator [isSeparadorSimple]="true" [textoSeparador]="invitationData.separators.beforeTimeline"></app-separator>
+      <app-bloque-celebracion-detalle [timeline]="invitationData.timeline"></app-bloque-celebracion-detalle>
+    </ng-container>
 
     <!-- Bloque 6: Galería de fotos -->
-    <app-bloque-galeria-fotos
-      [quote]="invitationData.texts.galleryQuote"
-      [images]="invitationData.gallery">
-    </app-bloque-galeria-fotos>
+    <ng-container *ngIf="invitationData.blocks.galeria">
+      <app-separator [isSeparadorSimple]="true" [textoSeparador]="invitationData.separators.beforeGallery"></app-separator>
+      <app-bloque-galeria-fotos
+        [quote]="invitationData.texts.galleryQuote"
+        [images]="invitationData.gallery">
+      </app-bloque-galeria-fotos>
+    </ng-container>
 
-    <!-- Bloque 7: Confirmar asistencia vía whatsapp -->
+    <!-- Bloque 7: Confirmar asistencia vía WhatsApp -->
     <app-bloque-confirmar-asistencia-whatsapp
+      *ngIf="invitationData.blocks.rsvp"
       [person1]="invitationData.couple.person1"
       [person2]="invitationData.couple.person2"
       [rsvpTitle]="invitationData.texts.rsvpTitle"
-      [whatsappMessage]="invitationData.texts.rsvpWhatsappMessage">
+      [rsvpTitle2]="invitationData.texts.rsvpTitle2"
+      [whatsappMessage]="invitationData.texts.rsvpWhatsappMessage"
+      [backgroundImage]="invitationData.texts.rsvpBackground || ''">
     </app-bloque-confirmar-asistencia-whatsapp>
 
-    <!-- Bloque 8: Donde dormir: Hoteles y casas rurales -->
+    <!-- Bloque 8: Hoteles y casas rurales -->
     <app-bloque-hoteles
+      *ngIf="invitationData.blocks.hoteles"
       [title]="invitationData.texts.accommodationTitle"
       [subtitle]="invitationData.texts.accommodationSubtitle"
       [accommodation]="invitationData.accommodation">
@@ -66,17 +90,25 @@
 
     <!-- Bloque 9: Compartir en redes sociales -->
     <app-bloque-compartir-redes-sociales
+      *ngIf="invitationData.blocks.redes"
       [person1]="invitationData.couple.person1"
       [person2]="invitationData.couple.person2"
       [social]="invitationData.social"
       [socialTitle]="invitationData.texts.socialTitle">
     </app-bloque-compartir-redes-sociales>
 
+    
+
     <!-- Bloque Final: Frase agradecimientos -->
     <app-bloque-frase-agradecimientos
+      *ngIf="invitationData.blocks.agradecimientos"
       [thankYouText]="invitationData.texts.thankYouText"
-      [countdownDate]="invitationData.countdownDate">
+      [thankYouText2]="invitationData.texts.thankYouText2"
+      [countdownDate]="invitationData.countdownDate"
+      [backgroundImage]="invitationData.thanksBackground"
+      [showCountdown]="false">
     </app-bloque-frase-agradecimientos>
+
 
   </div>
 

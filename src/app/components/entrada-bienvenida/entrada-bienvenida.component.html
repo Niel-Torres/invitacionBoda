@@ -1,19 +1,19 @@
 <section class="bloque-section wallpaper-entrada-1 ">
-  <button class="bloque-section-button" routerLink="/nos-casamos" routerDirection="root">
+  <button class="bloque-section-button" routerLink="/tu-invitacion" routerDirection="root">
     <div class="bloque-section-buton-bienvenida inset-0">
       <div class="b1">
         <div class="b1-1" appFadeInProgressive>
-          <div><p class="darrel size-70">Grace</p></div>
+          <div><p class="darrel size-70">{{ data?.couple?.person1?.name || 'Grace' }}</p></div>
           <div class="name-y"><p class="darrel size-70">y</p></div>
-          <div><p class="darrel size-70">Edu</p></div>
+          <div><p class="darrel size-70">{{ data?.couple?.person2?.name || 'Edu' }}</p></div>
         </div>
         <div class="b1-2 inset-0">
           <ion-img src="assets/images/fondos/circle-flowers.png" class="object-contain w-full h-full" appRotateOnLoad></ion-img>
         </div>
       </div>
       <div class="b2">
-        <h2 class="b2-1 text-5xl mt-6 darrel black" appTextTypewriter [delay]="100">Tenemos una noticia...</h2>
-        <p class="b2-2 text-2xl animacion-resaltar" routerLink="/nos-casamos" routerDirection="root" appFadeInProgressive>¡ Haz clic aquí !</p>
+        <h2 class="b2-1 text-5xl mt-6 darrel black" appTextTypewriter [delay]="100">{{ data?.welcome?.title || 'Tenemos una noticia...' }}</h2>
+        <p class="b2-2 text-2xl animacion-resaltar" routerLink="/tu-invitacion" routerDirection="root" appFadeInProgressive>¡ Haz clic aquí !</p>
       </div>
     </div>
   </button>

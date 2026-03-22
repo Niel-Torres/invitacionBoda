@@ -2,6 +2,11 @@
 .fondo-small {
     background-color: #EDDBC7;
     text-align: center;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   
     .fondo-small-text1 {
       margin: 0px 35px 0px 35px;
@@ -12,7 +17,10 @@
     .fondo-small-text2 {
       margin: 0px 40px 0px 40px;
       font-family: 'Kalam', cursive;
-      padding: 30px 0px 30px 0px;
+    }
+
+    .padding-small-text2 {
+       padding: 30px 0px 12px 0px;
     }
   
     .svg-heart1 {

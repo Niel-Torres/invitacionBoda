@@ -1,19 +1,21 @@
 <ion-content [scrollEvents]="true" [fullscreen]="true">
-    <div class="body">
-  
-        <app-entrada-bienvenida></app-entrada-bienvenida>
+  <div class="body">
 
-    </div>
-  
-  
-    <!-- Bloque Hidden -->
-     <!--
-      <div class="hidden">
-      <span>
-        Para una mejor experiencia, abre la invitación desde tu móvil o gira la pantalla
-      </span>
-    </div>
-     -->
-  
-  </ion-content>
-  
+    <ng-container *ngIf="invitationData as data">
+
+      <!-- Boda: pantalla de bienvenida clásica -->
+      <app-entrada-bienvenida
+        *ngIf="data.type === 'boda'"
+        [data]="data">
+      </app-entrada-bienvenida>
+
+      <!-- Babyshower: animación de sobre/carta -->
+      <app-entrada-bienvenida-babyshower
+        *ngIf="data.type === 'babyshower'"
+        [data]="data">
+      </app-entrada-bienvenida-babyshower>
+
+    </ng-container>
+
+  </div>
+</ion-content>

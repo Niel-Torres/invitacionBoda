@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/welcome/welcome.module').then( m => m.WelcomePageModule)
   },
   {
-    path: 'nos-casamos',
+    path: 'tu-invitacion',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {

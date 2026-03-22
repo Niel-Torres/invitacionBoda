@@ -1,5 +1,9 @@
-<div class="fondo-small">
-  <h2 class="rosa fondo-small-text2" appTextTypewriter>{{rsvpTitle}}</h2>
+<div class="fondo-small"
+     [style.background-image]="backgroundImage ? 'url(' + backgroundImage + ')' : null"
+     [style.background-size]="backgroundImage ? 'cover' : null"
+     [style.background-position]="backgroundImage ? 'center' : null">
+  <h2 class="rosa fondo-small-text2 padding-small-text2" appTextTypewriter>{{rsvpTitle}}</h2>
+  <h2 class="rosa fondo-small-text2" appTextTypewriter>{{rsvpTitle2}}</h2>
   <app-contact-bride-groom
     [person1]="person1"
     [person2]="person2"

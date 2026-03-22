@@ -1,0 +1,294 @@
+// ─── Variables ───────────────────────────────────────────────────────────────
+$env-w: 300px;
+$env-h: 200px;
+$env-body:   #FBF0E0;
+$flap-color: #F4E4C4;
+$fold-side:  #EDDBBA;
+$fold-bot:   #E4D0A8;
+$pink-main:  #C0607A;
+$pink-light: #FFD6E7;
+$pink-seal1: #FF8FAB;
+$pink-seal2: #C0607A;
+
+// ─── Section wrapper ─────────────────────────────────────────────────────────
+.welcome-babyshower {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  //background: radial-gradient(ellipse at 30% 20%, #FFE8F4 0%, #FFF0F8 40%, #FDE8F2 100%);
+  padding: 24px 16px;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: ivory;
+  
+
+  // Large decorative circle — top right
+  &::before {
+    content: '';
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background: rgba(255, 182, 210, 0.18);
+    top: -120px;
+    right: -120px;
+    pointer-events: none;
+  }
+
+  // Large decorative circle — bottom left
+  &::after {
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background: rgba(255, 143, 171, 0.12);
+    bottom: -80px;
+    left: -80px;
+    pointer-events: none;
+  }
+}
+
+// ─── Floating star decorations ────────────────────────────────────────────────
+.deco {
+  position: absolute;
+  color: rgba(192, 96, 122, 0.25);
+  pointer-events: none;
+  animation: float-deco 4s ease-in-out infinite;
+}
+
+.deco--star1 { font-size: 1.4rem; top: 12%;  left: 8%;  animation-delay: 0s;    animation-duration: 5s; }
+.deco--star2 { font-size: 0.9rem; top: 18%;  right: 10%; animation-delay: 4.2s; animation-duration: 4s; }
+.deco--star3 { font-size: 1.1rem; bottom: 22%; left: 14%;  animation-delay: 4.4s; animation-duration: 6s; }
+
+@keyframes float-deco {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%       { transform: translateY(-12px) rotate(20deg); }
+}
+
+// ─── Scene container ──────────────────────────────────────────────────────────
+.scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+// ─── Title ────────────────────────────────────────────────────────────────────
+.welcome-title {
+  font-family: 'DarrelAllura', sans-serif;
+  font-size: 2rem;
+  color: $pink-main;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+  animation: fade-down 0.8s ease both;
+}
+
+// ─── Envelope wrapper (holds perspective) ─────────────────────────────────────
+.envelope-wrapper {
+  perspective: 1000px;
+  filter: drop-shadow(0 14px 36px rgba(180, 80, 110, 0.22));
+}
+
+// ─── Envelope body ────────────────────────────────────────────────────────────
+.envelope {
+  position: relative;
+  width: $env-w;
+  height: $env-h;
+  background: $env-body;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+// ─── Decorative fold triangles ────────────────────────────────────────────────
+// All three cover the same bounding box as the envelope.
+// Their clip-paths draw the visible triangles.
+// These are purely decorative — the inner card sits behind them (z-index: 1)
+// and only becomes visible when it slides above the envelope top edge.
+
+.env-fold {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.env-fold--left {
+  clip-path: polygon(0% 0%, 50% 50%, 0% 100%);
+  background: $fold-side;
+  z-index: 1;
+}
+
+.env-fold--right {
+  clip-path: polygon(100% 0%, 100% 100%, 50% 50%);
+  background: $fold-side;
+  z-index: 1;
+}
+
+.env-fold--bottom {
+  clip-path: polygon(0% 100%, 100% 100%, 50% 50%);
+  background: $fold-bot;
+  z-index: 2;
+}
+
+// ─── Inner invitation card ────────────────────────────────────────────────────
+.env-card {
+  position: absolute;
+  width: 264px;
+  height: 164px;
+  background: #FFFBFF;
+  border: 1px solid $pink-light;
+  border-radius: 10px;
+  top: 18px;
+  left: 18px;
+  //z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // Card slides up with a delay — starts when the flap is ~90° (nearly invisible)
+  transition: transform 3.65s ease-out 0.32s;
+
+  .open & {
+    // Slide the card fully above the envelope (+18px from its top position + envelope height)
+    transform: translateY(-214px);
+  }
+}
+
+.env-card__content {
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.env-card__names {
+  font-family: 'DarrelAllura', sans-serif;
+  font-size: 1.75rem;
+  color: $pink-main;
+  margin: 0 0 6px;
+  line-height: 1.2;
+}
+
+.env-card__amp {
+  font-size: 1.1rem;
+}
+
+.env-card__divider {
+  width: 48px;
+  height: 1px;
+  background: $pink-light;
+  margin: 6px auto;
+}
+
+.env-card__event {
+  font-size: 0.82rem;
+  color: #999;
+  font-weight: 500;
+  margin: 4px 0 2px;
+  letter-spacing: 0.02em;
+}
+
+.env-card__date {
+  font-size: 0.75rem;
+  color: #bbb;
+  margin: 0;
+}
+
+// ─── Top flap (the part that opens) ──────────────────────────────────────────
+// Triangle pointing down, covering the top half of the envelope.
+// Rotates backward (3D) when .open is applied to the parent .envelope.
+.env-flap {
+  position: absolute;
+  inset: 0;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 50%);
+  background: $flap-color;
+  transform-origin: top center;
+  transition: transform 0.65s cubic-bezier(0.35, 0.01, 0.25, 1);
+  z-index: 3;
+  // Hide the back face so the flap becomes invisible after rotating 90°
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  // Subtle crease line at the flap base
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.06);
+  }
+
+  .open & {
+    // Rotate the flap backward around the top edge of the envelope
+    transform: perspective(1000px) rotateX(-180deg);
+  }
+}
+
+// ─── Seal button ─────────────────────────────────────────────────────────────
+.env-seal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, $pink-seal1, $pink-seal2);
+  border: 3px solid $pink-light;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 18px rgba(192, 96, 122, 0.38);
+  animation: pulse-seal 2.2s ease infinite;
+  transition: opacity 0.25s ease;
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.9);
+    animation: none;
+  }
+
+  &:disabled {
+    opacity: 0;
+    pointer-events: none;
+    animation: none;
+  }
+}
+
+.env-seal__icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  user-select: none;
+}
+
+@keyframes pulse-seal {
+  0%, 100% { box-shadow: 0 4px 18px rgba(192, 96, 122, 0.38); }
+  50%       { box-shadow: 0 6px 28px rgba(192, 96, 122, 0.60); }
+}
+
+// ─── Call-to-action text ──────────────────────────────────────────────────────
+.welcome-cta {
+  font-size: 0.88rem;
+  color: #A07090;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.02em;
+  transition: opacity 0.35s ease;
+
+  &.fade-out {
+    opacity: 0;
+  }
+}
+
+// ─── Shared keyframes ─────────────────────────────────────────────────────────
+@keyframes fade-down {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

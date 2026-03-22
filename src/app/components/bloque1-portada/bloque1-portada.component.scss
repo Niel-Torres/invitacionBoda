@@ -7,6 +7,10 @@
     background-size: cover;
 }
 
+.text-subtitle-portada {
+    text-shadow: 4px 4px 4px lightcoral;
+}
+
 .portada-clip-def {
     position: absolute;
     width: 0;
@@ -18,15 +22,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 45px 0px 10px 0;
+    //padding: 45px 0px 10px 0;
+    padding: 15px 0px 70px 0;
 }
 
 // El path del clip ocupa exactamente 435×280px
 .portada-foto {
-    width: 435px;
-    height: 280px;
+    //width: 340px;
+    //height: 280px;
+    width: 300px;
+    height: 250px;
     clip-path: url(#portada-clip);
     overflow: hidden;
+    border-radius: 55%;
 
     img {
         width: 100%;
@@ -49,6 +57,41 @@
     .portada-foto { zoom: 0.68; }
 }
 
+// ─── Babyshower header ────────────────────────────────────────────────────────
+.bs-header {
+    padding-top: 55px;
+    padding-bottom: 0;
+}
+
+.bs-title {
+    font-family: 'Gamja Flower', cursive;
+    font-weight: 400;
+    font-size: 3.9rem;
+    color: #6B3A1F;
+    margin: 0 0 4px;
+    text-shadow: none;
+    line-height: 1.1;
+}
+
+.bs-name {
+    font-family: 'Gamja Flower', cursive;
+    font-weight: 400;
+    font-size: 2.9rem;
+    //color: #B5893A;
+    color: lightcoral;
+    letter-spacing: 0.05em;
+    margin: 0;
+    text-shadow: none;
+    text-transform: uppercase;
+    //text-shadow: 4px 4px 4px coral;
+}
+
+@media (max-width: 390px) {
+    .bs-title { font-size: 3.9rem; }
+    .bs-name  { font-size: 2.9rem; letter-spacing: 0.05em; }
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 .portada-nombres {
     font-size: 80px;
     color: rgb(223, 154, 70);

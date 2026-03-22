@@ -20,6 +20,8 @@ import { BloqueGaleriaFotosComponent } from '@components/bloque-galeria-fotos/bl
 import { CarruselComponent } from '@components/carrusel/carrusel.component';
 import { ContactBrideGroomComponent } from '@components/contact-bride-groom/contact-bride-groom.component';
 import { EntradaBienvenidaComponent } from './entrada-bienvenida/entrada-bienvenida.component';
+import { EntradaBienvenidaBabyshowerComponent } from './entrada-bienvenida-babyshower/entrada-bienvenida-babyshower.component';
+import { FechaDisplayComponent } from './fecha-display/fecha-display.component';
 
 // Directivas
 import { FadeInOnScrollDirective } from '@directives/fade-in-on-scroll.directive';
@@ -46,6 +48,8 @@ import { RotateOnLoadDirective } from '@directives/rotate-on-load.directive';
     BloqueFraseAgradecimientosComponent,
     CountdownFechaComponent,
     EntradaBienvenidaComponent,
+    EntradaBienvenidaBabyshowerComponent,
+    FechaDisplayComponent,
     FadeInOnScrollDirective, TextTypewriterDirective, FadeInProgressiveDirective, RotateOnLoadDirective
 
   ],
@@ -74,6 +78,8 @@ import { RotateOnLoadDirective } from '@directives/rotate-on-load.directive';
     BloqueFraseAgradecimientosComponent,
     CountdownFechaComponent,
     EntradaBienvenidaComponent,
+    EntradaBienvenidaBabyshowerComponent,
+    FechaDisplayComponent,
     FadeInOnScrollDirective,
     TextTypewriterDirective,
     FadeInProgressiveDirective,

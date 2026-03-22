@@ -14,14 +14,19 @@ export interface InvitationTexts {
   weddingDateText: string;
   galleryQuote: string;
   rsvpTitle: string;
+  rsvpTitle2: string;
+  rsvpBackground?: string;
   rsvpWhatsappMessage: string;
   accommodationTitle: string;
   accommodationSubtitle: string;
   socialTitle: string;
   thankYouText: string;
+  thankYouText2: string;
 }
 
 export interface InvitationSeparators {
+  complexQuote: string;
+  complexQuoteBackground?: string;
   afterCover: string;
   beforeCeremony: string;
   beforeReception: string;
@@ -54,13 +59,45 @@ export interface Social {
   instagramUrl: string;
 }
 
+export interface BlocksConfig {
+  portada: boolean;
+  separadorCita: boolean;
+  portada2: boolean;
+  iglesia: boolean;
+  ceremonia: boolean;
+  timeline: boolean;
+  galeria: boolean;
+  rsvp: boolean;
+  hoteles: boolean;
+  redes: boolean;
+  agradecimientos: boolean;
+  countdown: boolean;
+}
+
+export interface WelcomeData {
+  title?: string;
+  subtitle?: string;
+  buttonText?: string;
+}
+
+export interface EventVenue {
+  name: string;
+  address: string;
+  mapsUrl: string;
+}
+
 export interface InvitationData {
   type: string;
   couple: Couple;
   countdownDate: string;
+  eventVenue?: EventVenue;
   music: string;
+  babyName?: string;
   coverImage: string;
   coverBackground: string;
+  thanksBackground: string;
+  blocks: BlocksConfig;
+  welcome?: WelcomeData;
   texts: InvitationTexts;
   separators: InvitationSeparators;
   venues: Venue[];

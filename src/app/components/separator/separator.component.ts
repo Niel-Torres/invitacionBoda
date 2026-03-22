@@ -8,8 +8,8 @@ import { InvitationDataService } from 'src/app/services/invitation-data.service'
 })
 export class SeparatorComponent  implements OnInit {
   @Input() isSeparadorSimple!: boolean;
- // @Input() textoSeparador!: string;
- @Input() textoSeparador: string = ''; 
+  @Input() textoSeparador: string = '';
+  @Input() backgroundImage: string = '';
 
   invitationData: any;
 

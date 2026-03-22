@@ -13,8 +13,10 @@ export class Bloque1PortadaComponent implements OnInit {
   @Input() coverTitle!: string;
   @Input() coverSubtitle!: string;
   @Input() musicSrc!: string;
+  @Input() babyName?: string;
   @Input() coverImage!: string;
   @Input() coverBackground!: string;
+  @Input() invitationType: string = 'boda';
 
   constructor() { }
 

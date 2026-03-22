@@ -11,7 +11,9 @@ export class BloqueConfirmarAsistenciaWhatsappComponent implements OnInit {
   @Input() person1!: Person;
   @Input() person2!: Person;
   @Input() rsvpTitle!: string;
+  @Input() rsvpTitle2!: string;
   @Input() whatsappMessage!: string;
+  @Input() backgroundImage: string = '';
 
   constructor() {}
 

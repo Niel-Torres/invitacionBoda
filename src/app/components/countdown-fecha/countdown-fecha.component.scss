@@ -2,15 +2,19 @@
   text-align: center;
   font-family: Arial, sans-serif;
   height: 200px;
+  background-color: #A7727D;
 
   h2 {
     margin-bottom: 1rem;
     //font-family: "Tangerine", serif;
     //text-shadow: 4px 4px 4px #aaa;
-    font-weight: 400;
-    font-size: 24px;
-    color: #A7727D;
+    //font-weight: 400;
+    font-size: 20px;
+    color: white;
     font-family: "Kalam", cursive;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 600;
   }
 
   .timer {
@@ -24,13 +28,13 @@
 
       font-family: "Kalam", cursive;
       font-weight: 400;
-      font-size: 30px;
+      font-size: 20px;
       line-height: 1.2em;
-      color: #A7727D;
+      color: white;
     
       small {
         display: block;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         //font-weight: normal;
         font-weight: 600;
     
