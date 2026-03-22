@@ -15,6 +15,9 @@
   </div>
 
   <div class="venue-info" *ngIf="mapsUrl">
+    <p class="venue-name" *ngIf="venueName">A las 17:00h</p>
+    <br>
+
     <p class="venue-name" *ngIf="venueName">Dirección:</p>
     <p class="venue-name" *ngIf="venueName">{{ venueName }}</p>
     <p class="venue-name" *ngIf="venueName">Sala de eventos Circu's Lounge</p>
