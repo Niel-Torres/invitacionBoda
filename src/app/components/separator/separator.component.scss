@@ -1,6 +1,7 @@
 .fondo-small {
     background-color: #EDDBC7;
     text-align: center;
+    //padding-top: 120px;
   
     .fondo-small-text1 {
       margin: 0px 35px 0px 35px;
@@ -20,6 +21,10 @@
       margin-bottom: 40px;
       margin-top: 15px;
       fill: brown;
+    }
+
+    .black {
+      color: #54595F;
     }
   
     .svg-heart2 {}

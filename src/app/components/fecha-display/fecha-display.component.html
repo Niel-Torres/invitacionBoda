@@ -1,4 +1,4 @@
-<div class="fecha-display wallpaper-brush-rose">
+<div class="fecha-display">
   <div class="month">{{ month }}</div>
   <div class="date-row">
     <div class="side">
@@ -15,12 +15,11 @@
   </div>
 
   <div class="venue-info" *ngIf="mapsUrl">
-    <p class="venue-name" *ngIf="venueName">A las 17:00h</p>
+    <p class="venue-name" *ngIf="venueName">A las 16:00h</p>
     <br>
 
     <p class="venue-name" *ngIf="venueName">Dirección:</p>
     <p class="venue-name" *ngIf="venueName">{{ venueName }}</p>
-    <p class="venue-name" *ngIf="venueName">Sala de eventos Circu's Lounge</p>
     <p class="venue-address" *ngIf="venueAddress">{{ venueAddress }}</p>
     <a class="maps-btn" [href]="mapsUrl" target="_blank" rel="noopener">
       <ion-icon name="location-outline"></ion-icon>

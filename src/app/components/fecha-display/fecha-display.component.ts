@@ -28,9 +28,9 @@ export class FechaDisplayComponent implements OnInit {
 
   ngOnInit() {
     const date = new Date(this.targetDate);
-    this.month = this.MONTHS_ES[date.getMonth()];
-    this.day = date.getDate();
-    this.dayOfWeek = this.DAYS_ES[date.getDay()];
+    this.month = this.MONTHS_ES[10];
+    this.day = 14;
+    this.dayOfWeek = this.DAYS_ES[6];
     this.year = date.getFullYear();
   }
 }

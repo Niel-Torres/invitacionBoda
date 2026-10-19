@@ -1,20 +1,20 @@
 {
   "type": "babyshower",
   "couple": {
-    "person1": { "name": "Niel", "phone": "+34605729559" },
-    "person2": { "name": "Katerine", "phone": "+34656295612" }
+    "person1": { "name": "Carla", "phone": "+34624605904" },
+    "person2": { "name": "Enrique", "phone": "+34605717899" }
   },
-  "countdownDate": "2026-04-25T12:00:00",
+  "countdownDate": "2026-11-14T16:00:00",
   "eventVenue": {
-    "name": "Av. de Fuenlabrada, 91, 28912 Leganés, Madrid",
+    "name": "Calle Puerto de las cañadas del teide 39, Prado Overa,  Leganés, Madrid",
     "address": "",
-    "mapsUrl": "https://maps.app.goo.gl/TGYfRHi1LpyGSEGD6"
+    "mapsUrl": "https://maps.app.goo.gl/hCg9syfySG9YCzMF6"
   },
-  "babyName": "Valentina",
-  "music": "assets/music/las-cosas-peque.mp3",
-  "coverImage": "assets/new_images/papis_2.webp",
-  "coverBackground": "assets/new_images/wallpapers/portada1.webp",
-  "thanksBackground": "assets/new_images/wallpapers/portada-final.webp",
+  "babyName": "Zayden Kaleb",
+  "music": "assets/music/mi-verdad.mp3",
+  "coverImage": "assets/new_images/papis_3.png",
+  "coverBackground": "assets/new_images/wallpapers/2.png",
+  "thanksBackground": "assets/new_images/wallpapers/2.png",
 
 
   "blocks": {
@@ -41,11 +41,11 @@
   "texts": {
     "coverTitle": "Babyshower",
     "coverSubtitle": "Te invitamos a celebrar con nosotros la llegada de nuestra bebé:",
-    "weddingDateText": "25 de abril de 2026!",
+    "weddingDateText": "14 de noviembre de 2026",
     "galleryQuote": "Cuando te das cuenta que quieres pasar el resto de tu vida con una persona, quieres que el resto de tu vida empiece lo antes posible…",
     "rsvpTitle": "¡Nos encantaría contar contigo!.\n",
     "rsvpTitle2": "Por favor, confirma tu asistencia.",
-    "rsvpBackground": "assets/new_images/wallpapers/portada-final.webp",
+    "rsvpBackground": "assets/new_images/wallpapers/3.png",
     "rsvpWhatsappMessage": "¡Hola! Quiero confirmar mi asistencia al BabyShower✨🍼✨",
     "accommodationTitle": "¿Os quedaís a dormir?",
     "accommodationSubtitle": "¡Genial!.\nOs ofrecemos algunas opciones",
@@ -55,10 +55,10 @@
 
   },
   "separators": {
-    "complexQuote": "Hay noticias que cambian la vida para siempre… Y esta es la nuestra 🥹✨",
-    "complexQuote2": "Después de mucho soñar, esperar y aprender… entendimos que los tiempos de Dios son perfectos 🙏🏽✨",
-    "complexQuote3": "Una nueva vida viene en camino… y queremos celebrarlo contigo 🫶🏼🍼",
-    "complexQuoteBackground": "assets/new_images/wallpapers/portada-clean.webp",
+    "complexQuote": "Este bebé es nuestra verdad, nuestro refugio y nuestra mayor alegría ✨",
+    "complexQuote2": "Y como las mejores noticias se comparten, queremos celebrarlo contigo",
+    "complexQuote3": "🫶🏼🍼",
+    "complexQuoteBackground": "assets/new_images/wallpapers/4.png",
     "afterCover": "",
     "beforeCeremony": "¿Dónde es la iglesia?",
     "beforeReception": "¿Dónde es el banquete?",

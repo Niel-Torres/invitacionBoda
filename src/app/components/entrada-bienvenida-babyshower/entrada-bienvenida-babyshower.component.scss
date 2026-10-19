@@ -5,10 +5,10 @@ $env-body:   #FBF0E0;
 $flap-color: #F4E4C4;
 $fold-side:  #EDDBBA;
 $fold-bot:   #E4D0A8;
-$pink-main:  #C0607A;
-$pink-light: #FFD6E7;
-$pink-seal1: #FF8FAB;
-$pink-seal2: #C0607A;
+$blue-main:  #4A7FA7;
+$blue-light: #D6E9FF;
+$blue-seal1: #7FB2E5;
+$blue-seal2: #4A7FA7;
 
 // ─── Section wrapper ─────────────────────────────────────────────────────────
 .welcome-babyshower {
@@ -18,12 +18,12 @@ $pink-seal2: #C0607A;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  //background: radial-gradient(ellipse at 30% 20%, #FFE8F4 0%, #FFF0F8 40%, #FDE8F2 100%);
+  //background: radial-gradient(ellipse at 30% 20%, #E8F2FF 0%, #F0F7FF 40%, #E6F0FC 100%);
   padding: 24px 16px;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  background-color: lavenderblush;
+  background-color: aliceblue;
 
   // Large decorative circle — top right
   &::before {
@@ -32,7 +32,7 @@ $pink-seal2: #C0607A;
     width: 340px;
     height: 340px;
     border-radius: 50%;
-    background: rgba(255, 182, 210, 0.18);
+    background: rgba(160, 200, 240, 0.18);
     top: -120px;
     right: -120px;
     pointer-events: none;
@@ -45,7 +45,7 @@ $pink-seal2: #C0607A;
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    background: rgba(255, 143, 171, 0.12);
+    background: rgba(127, 178, 229, 0.12);
     bottom: -80px;
     left: -80px;
     pointer-events: none;
@@ -55,7 +55,7 @@ $pink-seal2: #C0607A;
 // ─── Floating star decorations ────────────────────────────────────────────────
 .deco {
   position: absolute;
-  color: rgba(192, 96, 122, 0.25);
+  color: rgba(74, 127, 167, 0.25);
   pointer-events: none;
   animation: float-deco 4s ease-in-out infinite;
 }
@@ -83,7 +83,7 @@ $pink-seal2: #C0607A;
 .welcome-title {
   font-family: 'Ephesis', cursive;
   font-size: 2rem;
-  color: $pink-main;
+  color: $blue-main;
   text-align: center;
   margin: 0;
   line-height: 1.2;
@@ -93,7 +93,7 @@ $pink-seal2: #C0607A;
 // ─── Envelope wrapper (holds perspective) ─────────────────────────────────────
 .envelope-wrapper {
   perspective: 1000px;
-  filter: drop-shadow(0 14px 36px rgba(180, 80, 110, 0.22));
+  filter: drop-shadow(0 14px 36px rgba(60, 100, 140, 0.22));
 }
 
 // ─── Envelope body ────────────────────────────────────────────────────────────
@@ -141,8 +141,8 @@ $pink-seal2: #C0607A;
   position: absolute;
   width: 264px;
   height: 164px;
-  background: #FFFBFF;
-  border: 1px solid $pink-light;
+  background: #FBFDFF;
+  border: 1px solid $blue-light;
   border-radius: 10px;
   top: 18px;
   left: 18px;
@@ -167,7 +167,7 @@ $pink-seal2: #C0607A;
 .env-card__names {
   //font-family: 'DarrelAllura', sans-serif;
   font-size: 1.99rem;
-  color: $pink-main;
+  color: $blue-main;
   margin: 0 0 6px;
   line-height: 1.2;
   font-family: "Gamja Flower", cursive;
@@ -180,7 +180,7 @@ $pink-seal2: #C0607A;
 .env-card__divider {
   width: 48px;
   height: 1px;
-  background: $pink-light;
+  background: $blue-light;
   margin: 6px auto;
 }
 
@@ -241,13 +241,13 @@ $pink-seal2: #C0607A;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(135deg, $pink-seal1, $pink-seal2);
-  border: 3px solid $pink-light;
+  background: linear-gradient(135deg, $blue-seal1, $blue-seal2);
+  border: 3px solid $blue-light;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 18px rgba(192, 96, 122, 0.38);
+  box-shadow: 0 4px 18px rgba(74, 127, 167, 0.38);
   animation: pulse-seal 2.2s ease infinite;
   transition: opacity 0.25s ease;
 
@@ -275,7 +275,7 @@ $pink-seal2: #C0607A;
 .env-seal__ring {
   position: absolute;
   border-radius: 50%;
-  border: 2px solid $pink-seal1;
+  border: 2px solid $blue-seal1;
   opacity: 0;
   pointer-events: none;
 }
@@ -308,14 +308,14 @@ $pink-seal2: #C0607A;
 }
 
 @keyframes pulse-seal {
-  0%, 100% { box-shadow: 0 4px 18px rgba(192, 96, 122, 0.38); }
-  50%       { box-shadow: 0 6px 28px rgba(192, 96, 122, 0.60); }
+  0%, 100% { box-shadow: 0 4px 18px rgba(74, 127, 167, 0.38); }
+  50%       { box-shadow: 0 6px 28px rgba(74, 127, 167, 0.60); }
 }
 
 // ─── Call-to-action text ──────────────────────────────────────────────────────
 .welcome-cta {
   font-size: 0.88rem;
-  color: #A07090;
+  color: #6B88A6;
   text-align: center;
   margin: 0;
   letter-spacing: 0.02em;

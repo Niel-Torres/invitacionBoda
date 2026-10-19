@@ -1,5 +1,5 @@
 .contenedor_bloque {
-    height: 670px;
+    height: 850px;
     width: 100%;
     background-color: white;
     background-position: top center;
@@ -23,18 +23,18 @@
     justify-content: center;
     align-items: center;
     //padding: 45px 0px 10px 0;
-    padding: 15px 0px 70px 0;
+    padding: 15px 0px 15px 0;
 }
 
 // El path del clip ocupa exactamente 435×280px
 .portada-foto {
     //width: 340px;
     //height: 280px;
-    width: 300px;
-    height: 250px;
+    width: 280px;
+    height: auto;
     clip-path: url(#portada-clip);
     overflow: hidden;
-    border-radius: 55%;
+    border-radius: 45%;
 
     img {
         width: 100%;
@@ -78,7 +78,7 @@
     font-weight: 400;
     font-size: 2.9rem;
     //color: #B5893A;
-    color: lightcoral;
+    color: cornflowerblue;
     letter-spacing: 0.05em;
     margin: 0;
     text-shadow: none;
@@ -163,7 +163,7 @@ audio::-webkit-media-controls-play-button {}
 @media only screen and (max-width: 428px) and (orientation: portrait) {
 
     .contenedor_bloque {
-        height: 710px;
+        height: auto;
     }
 
 
